@@ -1,0 +1,1742 @@
+[
+  {
+    "city": "Alegrete",
+    "country": "BR",
+    "code": "ALQ"
+  },
+  {
+    "city": "Alenquer",
+    "country": "BR",
+    "code": "ALT"
+  },
+  {
+    "city": "Almeirim",
+    "country": "BR",
+    "code": "GGF"
+  },
+  {
+    "city": "Almeirim",
+    "country": "BR",
+    "code": "MEU"
+  },
+  {
+    "city": "Almenara",
+    "country": "BR",
+    "code": "AMJ"
+  },
+  {
+    "city": "Alta Floresta",
+    "country": "BR",
+    "code": "AFL"
+  },
+  {
+    "city": "Altamira",
+    "country": "BR",
+    "code": "ATM"
+  },
+  {
+    "city": "Alto Parnaíba",
+    "country": "BR",
+    "code": "APY"
+  },
+  {
+    "city": "Angra dos Reis",
+    "country": "BR",
+    "code": "GDR"
+  },
+  {
+    "city": "Anápolis",
+    "country": "BR",
+    "code": "APS"
+  },
+  {
+    "city": "Apucarana",
+    "country": "BR",
+    "code": "APU"
+  },
+  {
+    "city": "Apuí",
+    "country": "BR",
+    "code": "IUP"
+  },
+  {
+    "city": "Aracaju",
+    "country": "BR",
+    "code": "AJU"
+  },
+  {
+    "city": "Aracati",
+    "country": "BR",
+    "code": "ARX"
+  },
+  {
+    "city": "Aragarças",
+    "country": "BR",
+    "code": "ARS"
+  },
+  {
+    "city": "Araguaína",
+    "country": "BR",
+    "code": "AUX"
+  },
+  {
+    "city": "Arapiraca",
+    "country": "BR",
+    "code": "APQ"
+  },
+  {
+    "city": "Arapongas",
+    "country": "BR",
+    "code": "APX"
+  },
+  {
+    "city": "Araraquara",
+    "country": "BR",
+    "code": "AQA"
+  },
+  {
+    "city": "Araripina",
+    "country": "BR",
+    "code": "JAW"
+  },
+  {
+    "city": "Araxá",
+    "country": "BR",
+    "code": "AAX"
+  },
+  {
+    "city": "Araçatuba",
+    "country": "BR",
+    "code": "ARU"
+  },
+  {
+    "city": "Araçuaí",
+    "country": "BR",
+    "code": "AIY"
+  },
+  {
+    "city": "Aripuanã",
+    "country": "BR",
+    "code": "AIR"
+  },
+  {
+    "city": "Ariquemes",
+    "country": "BR",
+    "code": "AQM"
+  },
+  {
+    "city": "Arraias",
+    "country": "BR",
+    "code": "AAI"
+  },
+  {
+    "city": "Arujá",
+    "country": "BR",
+    "code": "ZFU"
+  },
+  {
+    "city": "Assis",
+    "country": "BR",
+    "code": "AIF"
+  },
+  {
+    "city": "Bagé",
+    "country": "BR",
+    "code": "BGX"
+  },
+  {
+    "city": "Balsas",
+    "country": "BR",
+    "code": "BSS"
+  },
+  {
+    "city": "Barcelos",
+    "country": "BR",
+    "code": "BAZ"
+  },
+  {
+    "city": "Barra",
+    "country": "BR",
+    "code": "BQQ"
+  },
+  {
+    "city": "Barra do Corda",
+    "country": "BR",
+    "code": "BDC"
+  },
+  {
+    "city": "Barra do Garças",
+    "country": "BR",
+    "code": "BPG"
+  },
+  {
+    "city": "Barreiras",
+    "country": "BR",
+    "code": "BRA"
+  },
+  {
+    "city": "Barreirinhas",
+    "country": "BR",
+    "code": "BRB"
+  },
+  {
+    "city": "Barretos",
+    "country": "BR",
+    "code": "BAT"
+  },
+  {
+    "city": "Bauru",
+    "country": "BR",
+    "code": "JTC"
+  },
+  {
+    "city": "Belmonte",
+    "country": "BR",
+    "code": "BVM"
+  },
+  {
+    "city": "Belo Horizonte",
+    "country": "BR",
+    "code": "CNF"
+  },
+  {
+    "city": "Belo Horizonte",
+    "country": "BR",
+    "code": "PLU"
+  },
+  {
+    "city": "Belém",
+    "country": "BR",
+    "code": "BEL"
+  },
+  {
+    "city": "Bento Gonçalves",
+    "country": "BR",
+    "code": "BGV"
+  },
+  {
+    "city": "Blumenau",
+    "country": "BR",
+    "code": "BNU"
+  },
+  {
+    "city": "Boa Vista",
+    "country": "BR",
+    "code": "BVB"
+  },
+  {
+    "city": "Boca do Acre",
+    "country": "BR",
+    "code": "BCR"
+  },
+  {
+    "city": "Bom Jesus da Lapa",
+    "country": "BR",
+    "code": "LAZ"
+  },
+  {
+    "city": "Bonito",
+    "country": "BR",
+    "code": "BYO"
+  },
+  {
+    "city": "Borba",
+    "country": "BR",
+    "code": "RBB"
+  },
+  {
+    "city": "Bragança Paulista",
+    "country": "BR",
+    "code": "BJP"
+  },
+  {
+    "city": "Brasília",
+    "country": "BR",
+    "code": "BSB"
+  },
+  {
+    "city": "Breves",
+    "country": "BR",
+    "code": "BVS"
+  },
+  {
+    "city": "Brumado",
+    "country": "BR",
+    "code": "BMS"
+  },
+  {
+    "city": "Cabo Frio",
+    "country": "BR",
+    "code": "BZC"
+  },
+  {
+    "city": "Cabo Frio",
+    "country": "BR",
+    "code": "CFB"
+  },
+  {
+    "city": "Cachoeira Do Sul",
+    "country": "BR",
+    "code": "QDB"
+  },
+  {
+    "city": "Cachoeiro do Itapemirim",
+    "country": "BR",
+    "code": "CDI"
+  },
+  {
+    "city": "Cacoal",
+    "country": "BR",
+    "code": "OAL"
+  },
+  {
+    "city": "Cairu",
+    "country": "BR",
+    "code": "MXQ"
+  },
+  {
+    "city": "Cairu",
+    "country": "BR",
+    "code": "PBA"
+  },
+  {
+    "city": "Cajazeiras",
+    "country": "BR",
+    "code": "CJZ"
+  },
+  {
+    "city": "Caldas Novas",
+    "country": "BR",
+    "code": "CLV"
+  },
+  {
+    "city": "Cametá",
+    "country": "BR",
+    "code": "CMT"
+  },
+  {
+    "city": "Camocim",
+    "country": "BR",
+    "code": "CMC"
+  },
+  {
+    "city": "Campina Grande",
+    "country": "BR",
+    "code": "CPV"
+  },
+  {
+    "city": "Campinas",
+    "country": "BR",
+    "code": "VCP"
+  },
+  {
+    "city": "Campo Grande",
+    "country": "BR",
+    "code": "CGR"
+  },
+  {
+    "city": "Campo Mourão",
+    "country": "BR",
+    "code": "CBW"
+  },
+  {
+    "city": "Campos dos Goytacazes",
+    "country": "BR",
+    "code": "CAW"
+  },
+  {
+    "city": "Canarana",
+    "country": "BR",
+    "code": "CQA"
+  },
+  {
+    "city": "Canavieiras",
+    "country": "BR",
+    "code": "CNV"
+  },
+  {
+    "city": "Canela",
+    "country": "BR",
+    "code": "CEL"
+  },
+  {
+    "city": "Carauari",
+    "country": "BR",
+    "code": "CAF"
+  },
+  {
+    "city": "Caravelas",
+    "country": "BR",
+    "code": "CRQ"
+  },
+  {
+    "city": "Carolina",
+    "country": "BR",
+    "code": "CLN"
+  },
+  {
+    "city": "Caruaru",
+    "country": "BR",
+    "code": "CAU"
+  },
+  {
+    "city": "Carutapera",
+    "country": "BR",
+    "code": "CTP"
+  },
+  {
+    "city": "Cascavel",
+    "country": "BR",
+    "code": "CAC"
+  },
+  {
+    "city": "Cassilândia",
+    "country": "BR",
+    "code": "CSS"
+  },
+  {
+    "city": "Catalão",
+    "country": "BR",
+    "code": "TLZ"
+  },
+  {
+    "city": "Caxias Do Sul",
+    "country": "BR",
+    "code": "CXJ"
+  },
+  {
+    "city": "Caçador",
+    "country": "BR",
+    "code": "CFC"
+  },
+  {
+    "city": "Chapecó",
+    "country": "BR",
+    "code": "XAP"
+  },
+  {
+    "city": "Cianorte",
+    "country": "BR",
+    "code": "GGH"
+  },
+  {
+    "city": "Coari",
+    "country": "BR",
+    "code": "CIZ"
+  },
+  {
+    "city": "Colatina",
+    "country": "BR",
+    "code": "QCH"
+  },
+  {
+    "city": "Conceição do Araguaia",
+    "country": "BR",
+    "code": "CDJ"
+  },
+  {
+    "city": "Concórdia",
+    "country": "BR",
+    "code": "CCI"
+  },
+  {
+    "city": "Confresa",
+    "country": "BR",
+    "code": "CFO"
+  },
+  {
+    "city": "Cornélio Procópio",
+    "country": "BR",
+    "code": "CKO"
+  },
+  {
+    "city": "Correia Pinto",
+    "country": "BR",
+    "code": "EEA"
+  },
+  {
+    "city": "Corumbá",
+    "country": "BR",
+    "code": "CMG"
+  },
+  {
+    "city": "Costa Marques",
+    "country": "BR",
+    "code": "CQS"
+  },
+  {
+    "city": "Cotriguaçu",
+    "country": "BR",
+    "code": "OTT"
+  },
+  {
+    "city": "Crateús",
+    "country": "BR",
+    "code": "JCS"
+  },
+  {
+    "city": "Criciúma",
+    "country": "BR",
+    "code": "CCM"
+  },
+  {
+    "city": "Cristalândia",
+    "country": "BR",
+    "code": "IDO"
+  },
+  {
+    "city": "Cruz",
+    "country": "BR",
+    "code": "JJD"
+  },
+  {
+    "city": "Cruz Alta",
+    "country": "BR",
+    "code": "CZB"
+  },
+  {
+    "city": "Cruzeiro Do Sul",
+    "country": "BR",
+    "code": "CZS"
+  },
+  {
+    "city": "Cuiabá",
+    "country": "BR",
+    "code": "CGB"
+  },
+  {
+    "city": "Curitiba",
+    "country": "BR",
+    "code": "BFH"
+  },
+  {
+    "city": "Curitiba",
+    "country": "BR",
+    "code": "CWB"
+  },
+  {
+    "city": "Currais Novos",
+    "country": "BR",
+    "code": "QCP"
+  },
+  {
+    "city": "Cururupu",
+    "country": "BR",
+    "code": "CPU"
+  },
+  {
+    "city": "Cáceres",
+    "country": "BR",
+    "code": "CCX"
+  },
+  {
+    "city": "Diamantina",
+    "country": "BR",
+    "code": "DTI"
+  },
+  {
+    "city": "Diamantino",
+    "country": "BR",
+    "code": "DMT"
+  },
+  {
+    "city": "Dianópolis",
+    "country": "BR",
+    "code": "DNO"
+  },
+  {
+    "city": "Divinópolis",
+    "country": "BR",
+    "code": "DIQ"
+  },
+  {
+    "city": "Dourados",
+    "country": "BR",
+    "code": "DOU"
+  },
+  {
+    "city": "Eirunepé",
+    "country": "BR",
+    "code": "ERN"
+  },
+  {
+    "city": "Erechim",
+    "country": "BR",
+    "code": "ERM"
+  },
+  {
+    "city": "Feijó",
+    "country": "BR",
+    "code": "FEJ"
+  },
+  {
+    "city": "Feira de Santana",
+    "country": "BR",
+    "code": "FEC"
+  },
+  {
+    "city": "Fernando de Noronha",
+    "country": "BR",
+    "code": "FEN"
+  },
+  {
+    "city": "Floriano",
+    "country": "BR",
+    "code": "FLB"
+  },
+  {
+    "city": "Florianópolis",
+    "country": "BR",
+    "code": "FLN"
+  },
+  {
+    "city": "Fonte Boa",
+    "country": "BR",
+    "code": "FBA"
+  },
+  {
+    "city": "Fortaleza",
+    "country": "BR",
+    "code": "FOR"
+  },
+  {
+    "city": "Foz do Iguaçu",
+    "country": "BR",
+    "code": "IGU"
+  },
+  {
+    "city": "Franca",
+    "country": "BR",
+    "code": "FRC"
+  },
+  {
+    "city": "Francisco Beltrão",
+    "country": "BR",
+    "code": "FBE"
+  },
+  {
+    "city": "Garanhuns",
+    "country": "BR",
+    "code": "QGP"
+  },
+  {
+    "city": "Goiânia",
+    "country": "BR",
+    "code": "GYN"
+  },
+  {
+    "city": "Governador Valadares",
+    "country": "BR",
+    "code": "GVR"
+  },
+  {
+    "city": "Gravatai",
+    "country": "BR",
+    "code": "GCV"
+  },
+  {
+    "city": "Guadalupe",
+    "country": "BR",
+    "code": "GDP"
+  },
+  {
+    "city": "Guajará-Mirim",
+    "country": "BR",
+    "code": "GJM"
+  },
+  {
+    "city": "Guanambi",
+    "country": "BR",
+    "code": "GNM"
+  },
+  {
+    "city": "Guarapari",
+    "country": "BR",
+    "code": "GUZ"
+  },
+  {
+    "city": "Guarapuava",
+    "country": "BR",
+    "code": "GPB"
+  },
+  {
+    "city": "Guaratinguetá",
+    "country": "BR",
+    "code": "GUJ"
+  },
+  {
+    "city": "Guarujá",
+    "country": "BR",
+    "code": "SSZ"
+  },
+  {
+    "city": "Guaíra",
+    "country": "BR",
+    "code": "GGJ"
+  },
+  {
+    "city": "Guimarães",
+    "country": "BR",
+    "code": "GMS"
+  },
+  {
+    "city": "Gurupi",
+    "country": "BR",
+    "code": "GRP"
+  },
+  {
+    "city": "Horizontina",
+    "country": "BR",
+    "code": "HRZ"
+  },
+  {
+    "city": "Humaitá",
+    "country": "BR",
+    "code": "HUW"
+  },
+  {
+    "city": "Iguatu",
+    "country": "BR",
+    "code": "QIG"
+  },
+  {
+    "city": "Ijuí",
+    "country": "BR",
+    "code": "IJU"
+  },
+  {
+    "city": "Ilhéus",
+    "country": "BR",
+    "code": "IOS"
+  },
+  {
+    "city": "Imperatriz",
+    "country": "BR",
+    "code": "IMP"
+  },
+  {
+    "city": "Ipatinga",
+    "country": "BR",
+    "code": "IPN"
+  },
+  {
+    "city": "Ipiaú",
+    "country": "BR",
+    "code": "IPU"
+  },
+  {
+    "city": "Irecê",
+    "country": "BR",
+    "code": "IRE"
+  },
+  {
+    "city": "Itabuna",
+    "country": "BR",
+    "code": "ITN"
+  },
+  {
+    "city": "Itacoatiara",
+    "country": "BR",
+    "code": "ITA"
+  },
+  {
+    "city": "Itaituba",
+    "country": "BR",
+    "code": "ITB"
+  },
+  {
+    "city": "Itajaí",
+    "country": "BR",
+    "code": "ITJ"
+  },
+  {
+    "city": "Itambacuri",
+    "country": "BR",
+    "code": "ITI"
+  },
+  {
+    "city": "Itanhaém",
+    "country": "BR",
+    "code": "JTN"
+  },
+  {
+    "city": "Itaperuna",
+    "country": "BR",
+    "code": "ITP"
+  },
+  {
+    "city": "Itapetinga",
+    "country": "BR",
+    "code": "QIT"
+  },
+  {
+    "city": "Itaqui",
+    "country": "BR",
+    "code": "ITQ"
+  },
+  {
+    "city": "Ituberá",
+    "country": "BR",
+    "code": "ITE"
+  },
+  {
+    "city": "Itumbiara",
+    "country": "BR",
+    "code": "ITR"
+  },
+  {
+    "city": "Jacareacanga",
+    "country": "BR",
+    "code": "JCR"
+  },
+  {
+    "city": "Jacobina",
+    "country": "BR",
+    "code": "JCM"
+  },
+  {
+    "city": "Jaguaruna",
+    "country": "BR",
+    "code": "JJG"
+  },
+  {
+    "city": "Jales",
+    "country": "BR",
+    "code": "JLS"
+  },
+  {
+    "city": "Januária",
+    "country": "BR",
+    "code": "JNA"
+  },
+  {
+    "city": "Jataí",
+    "country": "BR",
+    "code": "JTI"
+  },
+  {
+    "city": "Jequié",
+    "country": "BR",
+    "code": "JEQ"
+  },
+  {
+    "city": "Ji-Paraná",
+    "country": "BR",
+    "code": "JPR"
+  },
+  {
+    "city": "Joaçaba",
+    "country": "BR",
+    "code": "JCB"
+  },
+  {
+    "city": "Joinville",
+    "country": "BR",
+    "code": "JOI"
+  },
+  {
+    "city": "João Pessoa",
+    "country": "BR",
+    "code": "JPA"
+  },
+  {
+    "city": "Juara",
+    "country": "BR",
+    "code": "JUA"
+  },
+  {
+    "city": "Juazeiro do Norte",
+    "country": "BR",
+    "code": "JDO"
+  },
+  {
+    "city": "Juiz de Fora",
+    "country": "BR",
+    "code": "IZA"
+  },
+  {
+    "city": "Juiz de Fora",
+    "country": "BR",
+    "code": "JDF"
+  },
+  {
+    "city": "Jundiaí",
+    "country": "BR",
+    "code": "QDV"
+  },
+  {
+    "city": "Juruena",
+    "country": "BR",
+    "code": "JRN"
+  },
+  {
+    "city": "Juruti",
+    "country": "BR",
+    "code": "JRT"
+  },
+  {
+    "city": "Juína",
+    "country": "BR",
+    "code": "JIA"
+  },
+  {
+    "city": "Lages",
+    "country": "BR",
+    "code": "LAJ"
+  },
+  {
+    "city": "Lavras",
+    "country": "BR",
+    "code": "VRZ"
+  },
+  {
+    "city": "Lençóis",
+    "country": "BR",
+    "code": "LEC"
+  },
+  {
+    "city": "Leopoldina",
+    "country": "BR",
+    "code": "LEP"
+  },
+  {
+    "city": "Linhares",
+    "country": "BR",
+    "code": "LHN"
+  },
+  {
+    "city": "Lins",
+    "country": "BR",
+    "code": "LIP"
+  },
+  {
+    "city": "Londrina",
+    "country": "BR",
+    "code": "LDB"
+  },
+  {
+    "city": "Lontras",
+    "country": "BR",
+    "code": "LOI"
+  },
+  {
+    "city": "Lucas do Rio Verde",
+    "country": "BR",
+    "code": "LVR"
+  },
+  {
+    "city": "Lábrea",
+    "country": "BR",
+    "code": "LBR"
+  },
+  {
+    "city": "Macapá",
+    "country": "BR",
+    "code": "MCP"
+  },
+  {
+    "city": "Macaé",
+    "country": "BR",
+    "code": "MEA"
+  },
+  {
+    "city": "Maceió",
+    "country": "BR",
+    "code": "MCZ"
+  },
+  {
+    "city": "Manaus",
+    "country": "BR",
+    "code": "MAO"
+  },
+  {
+    "city": "Manaus",
+    "country": "BR",
+    "code": "PLL"
+  },
+  {
+    "city": "Manhuaçu",
+    "country": "BR",
+    "code": "JMA"
+  },
+  {
+    "city": "Manicoré",
+    "country": "BR",
+    "code": "MNX"
+  },
+  {
+    "city": "Marabá",
+    "country": "BR",
+    "code": "MAB"
+  },
+  {
+    "city": "Maraú",
+    "country": "BR",
+    "code": "MUU"
+  },
+  {
+    "city": "Maricá",
+    "country": "BR",
+    "code": "JMR"
+  },
+  {
+    "city": "Maringá",
+    "country": "BR",
+    "code": "MGF"
+  },
+  {
+    "city": "Marília",
+    "country": "BR",
+    "code": "MII"
+  },
+  {
+    "city": "Matupá",
+    "country": "BR",
+    "code": "MBK"
+  },
+  {
+    "city": "Maués",
+    "country": "BR",
+    "code": "MBZ"
+  },
+  {
+    "city": "Minaçu",
+    "country": "BR",
+    "code": "MQH"
+  },
+  {
+    "city": "Monte Alegre",
+    "country": "BR",
+    "code": "MTE"
+  },
+  {
+    "city": "Montenegro",
+    "country": "BR",
+    "code": "QGF"
+  },
+  {
+    "city": "Montes Claros",
+    "country": "BR",
+    "code": "MOC"
+  },
+  {
+    "city": "Mossoró",
+    "country": "BR",
+    "code": "MVF"
+  },
+  {
+    "city": "Mucugê",
+    "country": "BR",
+    "code": "CHD"
+  },
+  {
+    "city": "Mucuri",
+    "country": "BR",
+    "code": "MVS"
+  },
+  {
+    "city": "Nanuque",
+    "country": "BR",
+    "code": "NNU"
+  },
+  {
+    "city": "Natal",
+    "country": "BR",
+    "code": "NAT"
+  },
+  {
+    "city": "Navegantes",
+    "country": "BR",
+    "code": "NVT"
+  },
+  {
+    "city": "Niquelândia",
+    "country": "BR",
+    "code": "NQL"
+  },
+  {
+    "city": "Nova Mutum",
+    "country": "BR",
+    "code": "NVM"
+  },
+  {
+    "city": "Nova Xavantina",
+    "country": "BR",
+    "code": "NOK"
+  },
+  {
+    "city": "Novo Aripuanã",
+    "country": "BR",
+    "code": "NVP"
+  },
+  {
+    "city": "Novo Hamburgo",
+    "country": "BR",
+    "code": "QHV"
+  },
+  {
+    "city": "Novo Progresso",
+    "country": "BR",
+    "code": "NPR"
+  },
+  {
+    "city": "Oiapoque",
+    "country": "BR",
+    "code": "OYK"
+  },
+  {
+    "city": "Oriximiná",
+    "country": "BR",
+    "code": "ORX"
+  },
+  {
+    "city": "Oriximiná",
+    "country": "BR",
+    "code": "TMT"
+  },
+  {
+    "city": "Ourilândia do Norte",
+    "country": "BR",
+    "code": "OIA"
+  },
+  {
+    "city": "Ourinhos",
+    "country": "BR",
+    "code": "OUS"
+  },
+  {
+    "city": "Palmas",
+    "country": "BR",
+    "code": "PMW"
+  },
+  {
+    "city": "Paracatu",
+    "country": "BR",
+    "code": "PYT"
+  },
+  {
+    "city": "Paragominas",
+    "country": "BR",
+    "code": "JPE"
+  },
+  {
+    "city": "Paranaguá",
+    "country": "BR",
+    "code": "PNG"
+  },
+  {
+    "city": "Paranavaí",
+    "country": "BR",
+    "code": "PVI"
+  },
+  {
+    "city": "Paranaíba",
+    "country": "BR",
+    "code": "PBB"
+  },
+  {
+    "city": "Paraty",
+    "country": "BR",
+    "code": "JPY"
+  },
+  {
+    "city": "Parauapebas",
+    "country": "BR",
+    "code": "CKS"
+  },
+  {
+    "city": "Parintins",
+    "country": "BR",
+    "code": "PIN"
+  },
+  {
+    "city": "Parnaíba",
+    "country": "BR",
+    "code": "PHB"
+  },
+  {
+    "city": "Passo Fundo",
+    "country": "BR",
+    "code": "PFB"
+  },
+  {
+    "city": "Passos",
+    "country": "BR",
+    "code": "PSW"
+  },
+  {
+    "city": "Pato Branco",
+    "country": "BR",
+    "code": "PTO"
+  },
+  {
+    "city": "Patos",
+    "country": "BR",
+    "code": "JPO"
+  },
+  {
+    "city": "Patos de Minas",
+    "country": "BR",
+    "code": "POJ"
+  },
+  {
+    "city": "Paulo Afonso",
+    "country": "BR",
+    "code": "PAV"
+  },
+  {
+    "city": "Pelotas",
+    "country": "BR",
+    "code": "PET"
+  },
+  {
+    "city": "Petrolina",
+    "country": "BR",
+    "code": "PNZ"
+  },
+  {
+    "city": "Picos",
+    "country": "BR",
+    "code": "PCS"
+  },
+  {
+    "city": "Pimenta Bueno",
+    "country": "BR",
+    "code": "PBQ"
+  },
+  {
+    "city": "Pinheiro",
+    "country": "BR",
+    "code": "PHI"
+  },
+  {
+    "city": "Pirapora",
+    "country": "BR",
+    "code": "PIV"
+  },
+  {
+    "city": "Pirassununga",
+    "country": "BR",
+    "code": "QPS"
+  },
+  {
+    "city": "Ponta Grossa",
+    "country": "BR",
+    "code": "PGZ"
+  },
+  {
+    "city": "Ponta Porã",
+    "country": "BR",
+    "code": "PMG"
+  },
+  {
+    "city": "Pontes e Lacerda",
+    "country": "BR",
+    "code": "LCB"
+  },
+  {
+    "city": "Porto Alegre",
+    "country": "BR",
+    "code": "POA"
+  },
+  {
+    "city": "Porto Alegre",
+    "country": "BR",
+    "code": "QNS"
+  },
+  {
+    "city": "Porto Alegre do Norte",
+    "country": "BR",
+    "code": "PBX"
+  },
+  {
+    "city": "Porto Nacional",
+    "country": "BR",
+    "code": "PNB"
+  },
+  {
+    "city": "Porto Seguro",
+    "country": "BR",
+    "code": "BPS"
+  },
+  {
+    "city": "Porto Velho",
+    "country": "BR",
+    "code": "PVH"
+  },
+  {
+    "city": "Porto de Moz",
+    "country": "BR",
+    "code": "PTQ"
+  },
+  {
+    "city": "Pouso Alegre",
+    "country": "BR",
+    "code": "PPY"
+  },
+  {
+    "city": "Poços De Caldas",
+    "country": "BR",
+    "code": "POO"
+  },
+  {
+    "city": "Prado",
+    "country": "BR",
+    "code": "PDF"
+  },
+  {
+    "city": "Presidente Dutra",
+    "country": "BR",
+    "code": "PDR"
+  },
+  {
+    "city": "Presidente Prudente",
+    "country": "BR",
+    "code": "PPB"
+  },
+  {
+    "city": "Recife",
+    "country": "BR",
+    "code": "REC"
+  },
+  {
+    "city": "Redenção",
+    "country": "BR",
+    "code": "RDC"
+  },
+  {
+    "city": "Resende",
+    "country": "BR",
+    "code": "REZ"
+  },
+  {
+    "city": "Ribeirão Preto",
+    "country": "BR",
+    "code": "RAO"
+  },
+  {
+    "city": "Rio Branco",
+    "country": "BR",
+    "code": "RBR"
+  },
+  {
+    "city": "Rio De Janeiro",
+    "country": "BR",
+    "code": "GIG"
+  },
+  {
+    "city": "Rio De Janeiro",
+    "country": "BR",
+    "code": "RRJ"
+  },
+  {
+    "city": "Rio Grande",
+    "country": "BR",
+    "code": "RIG"
+  },
+  {
+    "city": "Rio Verde",
+    "country": "BR",
+    "code": "RVD"
+  },
+  {
+    "city": "Rio de Janeiro",
+    "country": "BR",
+    "code": "SDU"
+  },
+  {
+    "city": "Rio de Janeiro",
+    "country": "BR",
+    "code": "SNZ"
+  },
+  {
+    "city": "Rondonópolis",
+    "country": "BR",
+    "code": "ROO"
+  },
+  {
+    "city": "Salinópolis",
+    "country": "BR",
+    "code": "OPP"
+  },
+  {
+    "city": "Salvador",
+    "country": "BR",
+    "code": "SSA"
+  },
+  {
+    "city": "Santa Cruz do Sul",
+    "country": "BR",
+    "code": "CSU"
+  },
+  {
+    "city": "Santa Fé do Sul",
+    "country": "BR",
+    "code": "SFV"
+  },
+  {
+    "city": "Santa Isabel do Rio Negro",
+    "country": "BR",
+    "code": "IRZ"
+  },
+  {
+    "city": "Santa Maria",
+    "country": "BR",
+    "code": "RIA"
+  },
+  {
+    "city": "Santa Rosa",
+    "country": "BR",
+    "code": "SRA"
+  },
+  {
+    "city": "Santa Terezinha",
+    "country": "BR",
+    "code": "STZ"
+  },
+  {
+    "city": "Santa Vitória do Palmar",
+    "country": "BR",
+    "code": "CTQ"
+  },
+  {
+    "city": "Santana do Araguaia",
+    "country": "BR",
+    "code": "CMP"
+  },
+  {
+    "city": "Santarém",
+    "country": "BR",
+    "code": "STM"
+  },
+  {
+    "city": "Santo Antônio do Içá",
+    "country": "BR",
+    "code": "IPG"
+  },
+  {
+    "city": "Santo Ângelo",
+    "country": "BR",
+    "code": "GEL"
+  },
+  {
+    "city": "Sapezal",
+    "country": "BR",
+    "code": "AZL"
+  },
+  {
+    "city": "Sena Madureira",
+    "country": "BR",
+    "code": "ZMD"
+  },
+  {
+    "city": "Serra Talhada",
+    "country": "BR",
+    "code": "SET"
+  },
+  {
+    "city": "Sinop",
+    "country": "BR",
+    "code": "OPS"
+  },
+  {
+    "city": "Sobral",
+    "country": "BR",
+    "code": "JSO"
+  },
+  {
+    "city": "Sorocaba",
+    "country": "BR",
+    "code": "SOD"
+  },
+  {
+    "city": "Sorriso",
+    "country": "BR",
+    "code": "SMT"
+  },
+  {
+    "city": "Soure",
+    "country": "BR",
+    "code": "SFK"
+  },
+  {
+    "city": "São Benedito",
+    "country": "BR",
+    "code": "JSB"
+  },
+  {
+    "city": "São Borja",
+    "country": "BR",
+    "code": "JBS"
+  },
+  {
+    "city": "São Carlos",
+    "country": "BR",
+    "code": "QSC"
+  },
+  {
+    "city": "São Félix Do Araguaia",
+    "country": "BR",
+    "code": "SXO"
+  },
+  {
+    "city": "São Félix do Xingu",
+    "country": "BR",
+    "code": "SXX"
+  },
+  {
+    "city": "São Gabriel da Cachoeira",
+    "country": "BR",
+    "code": "SJL"
+  },
+  {
+    "city": "São José Dos Campos",
+    "country": "BR",
+    "code": "SJK"
+  },
+  {
+    "city": "São José do Rio Preto",
+    "country": "BR",
+    "code": "SJP"
+  },
+  {
+    "city": "São João Del Rei",
+    "country": "BR",
+    "code": "JDR"
+  },
+  {
+    "city": "São Lourenço",
+    "country": "BR",
+    "code": "SSO"
+  },
+  {
+    "city": "São Lourenço Do Sul",
+    "country": "BR",
+    "code": "SQY"
+  },
+  {
+    "city": "São Luís",
+    "country": "BR",
+    "code": "SLZ"
+  },
+  {
+    "city": "São Mateus",
+    "country": "BR",
+    "code": "SBJ"
+  },
+  {
+    "city": "São Miguel do Araguaia",
+    "country": "BR",
+    "code": "SQM"
+  },
+  {
+    "city": "São Miguel do Oeste",
+    "country": "BR",
+    "code": "SQX"
+  },
+  {
+    "city": "São Paulo",
+    "country": "BR",
+    "code": "CGH"
+  },
+  {
+    "city": "São Paulo",
+    "country": "BR",
+    "code": "GRU"
+  },
+  {
+    "city": "São Paulo",
+    "country": "BR",
+    "code": "RTE"
+  },
+  {
+    "city": "São Paulo De Olivença",
+    "country": "BR",
+    "code": "OLC"
+  },
+  {
+    "city": "São Raimundo Nonato",
+    "country": "BR",
+    "code": "NSR"
+  },
+  {
+    "city": "São Roque",
+    "country": "BR",
+    "code": "JHF"
+  },
+  {
+    "city": "Tabatinga",
+    "country": "BR",
+    "code": "TBT"
+  },
+  {
+    "city": "Tangará da Serra",
+    "country": "BR",
+    "code": "TGQ"
+  },
+  {
+    "city": "Tarauacá",
+    "country": "BR",
+    "code": "TRQ"
+  },
+  {
+    "city": "Tauá",
+    "country": "BR",
+    "code": "JTA"
+  },
+  {
+    "city": "Tefé",
+    "country": "BR",
+    "code": "TFF"
+  },
+  {
+    "city": "Teixeira de Freitas",
+    "country": "BR",
+    "code": "TXF"
+  },
+  {
+    "city": "Telêmaco Borba",
+    "country": "BR",
+    "code": "TEC"
+  },
+  {
+    "city": "Teresina",
+    "country": "BR",
+    "code": "THE"
+  },
+  {
+    "city": "Teófilo Otoni",
+    "country": "BR",
+    "code": "TFL"
+  },
+  {
+    "city": "Toledo",
+    "country": "BR",
+    "code": "TOW"
+  },
+  {
+    "city": "Torres",
+    "country": "BR",
+    "code": "TSQ"
+  },
+  {
+    "city": "Três Lagoas",
+    "country": "BR",
+    "code": "TJL"
+  },
+  {
+    "city": "Tucuruí",
+    "country": "BR",
+    "code": "TUR"
+  },
+  {
+    "city": "Ubatuba",
+    "country": "BR",
+    "code": "UBT"
+  },
+  {
+    "city": "Uberaba",
+    "country": "BR",
+    "code": "UBA"
+  },
+  {
+    "city": "Uberlândia",
+    "country": "BR",
+    "code": "UDI"
+  },
+  {
+    "city": "Umuarama",
+    "country": "BR",
+    "code": "UMU"
+  },
+  {
+    "city": "Una",
+    "country": "BR",
+    "code": "UNA"
+  },
+  {
+    "city": "União da Vitória",
+    "country": "BR",
+    "code": "UVI"
+  },
+  {
+    "city": "Urucu",
+    "country": "BR",
+    "code": "RPU"
+  },
+  {
+    "city": "Uruguaiana",
+    "country": "BR",
+    "code": "URG"
+  },
+  {
+    "city": "Vacaria",
+    "country": "BR",
+    "code": "VCC"
+  },
+  {
+    "city": "Valença",
+    "country": "BR",
+    "code": "VAL"
+  },
+  {
+    "city": "Varginha",
+    "country": "BR",
+    "code": "VAG"
+  },
+  {
+    "city": "Videira",
+    "country": "BR",
+    "code": "VIA"
+  },
+  {
+    "city": "Vila Bela Da Santíssima Trindade",
+    "country": "BR",
+    "code": "MTG"
+  },
+  {
+    "city": "Vila Rica",
+    "country": "BR",
+    "code": "VLP"
+  },
+  {
+    "city": "Vilhena",
+    "country": "BR",
+    "code": "BVH"
+  },
+  {
+    "city": "Vitória",
+    "country": "BR",
+    "code": "VIX"
+  },
+  {
+    "city": "Vitória da Conquista",
+    "country": "BR",
+    "code": "VDC"
+  },
+  {
+    "city": "Votuporanga",
+    "country": "BR",
+    "code": "VOT"
+  },
+  {
+    "city": "Xanxerê",
+    "country": "BR",
+    "code": "AXE"
+  },
+  {
+    "city": "Xinguara",
+    "country": "BR",
+    "code": "XIG"
+  },
+  {
+    "city": "Água Boa",
+    "country": "BR",
+    "code": "GGB"
+  },
+  {
+    "city": "Óbidos",
+    "country": "BR",
+    "code": "OBI"
+  }
+]
