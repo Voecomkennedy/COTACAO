@@ -4,13 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Cotação de Passagens | VoeComKennedy</title>
-  <meta name="description" content="Solicite sua cotação de passagens aéreas com a VoeComKennedy. Atendimento via WhatsApp, rapidez e confiança." />
+  <meta name="description" content="Solicite sua cotação de passagens aéreas com a VoeComKennedy. Atendimento via WhatsApp." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet" />
 
   <style>
-    /* ── RESET ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
@@ -22,522 +21,266 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* ── NAVBAR ── */
+    /* ── NAV ── */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
-      z-index: 100;
+      z-index: 200;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 20px 24px;
-      background: linear-gradient(180deg, rgba(11,25,41,0.97) 0%, rgba(11,25,41,0.0) 100%);
+      padding: 18px 20px;
+      background: rgba(11,25,41,0.97);
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
     }
-    .nav-logo {
-      font-size: 17px;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: #fff;
-      text-decoration: none;
-    }
+    .nav-logo { font-size: 16px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #fff; text-decoration: none; }
     .nav-logo span { color: #3AACE2; }
     .nav-cta {
-      background: #3AACE2;
-      color: #fff;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 14px;
-      font-weight: 600;
-      padding: 10px 22px;
-      border-radius: 50px;
-      border: none;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background .2s, transform .15s;
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
+      background: #3AACE2; color: #fff;
+      font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 600;
+      padding: 9px 18px; border-radius: 50px; border: none; cursor: pointer;
+      text-decoration: none; display: inline-flex; align-items: center; gap: 6px;
+      transition: background .2s;
+      white-space: nowrap;
     }
-    .nav-cta:hover { background: #2a9bd0; transform: translateY(-1px); }
+    .nav-cta:hover { background: #2a9bd0; }
 
-    /* ── PAGE WRAPPER ── */
+    /* ── PAGE ── */
     .page {
-      padding-top: 88px;
+      padding-top: 72px;
       padding-bottom: 80px;
       max-width: 1060px;
       margin: 0 auto;
-      padding-left: 24px;
-      padding-right: 24px;
+      padding-left: 16px;
+      padding-right: 16px;
     }
+    @media (min-width: 640px) { .page { padding-left: 24px; padding-right: 24px; } }
 
-    /* ── HEADER SECTION ── */
-    .page-header {
-      padding: 40px 0 36px;
-      text-align: center;
-    }
-    .section-label {
-      display: inline-block;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: #3AACE2;
-      margin-bottom: 16px;
-    }
-    .page-title {
-      font-size: clamp(28px, 5vw, 44px);
-      font-weight: 700;
-      line-height: 1.15;
-      color: #fff;
-      margin-bottom: 14px;
-    }
+    /* ── HEADER ── */
+    .page-header { padding: 32px 0 28px; text-align: center; }
+    .section-label { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #3AACE2; margin-bottom: 12px; }
+    .page-title { font-size: clamp(24px, 6vw, 40px); font-weight: 700; line-height: 1.15; color: #fff; margin-bottom: 10px; }
     .page-title span { color: #3AACE2; }
-    .page-subtitle {
-      font-size: 16px;
-      font-weight: 400;
-      color: rgba(255,255,255,0.55);
-      max-width: 480px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-
-    /* ── DIVIDER ── */
-    .divider {
-      width: 48px;
-      height: 3px;
-      background: #3AACE2;
-      border-radius: 99px;
-      margin: 20px auto 0;
-    }
+    .page-subtitle { font-size: 14px; font-weight: 400; color: rgba(255,255,255,0.45); max-width: 400px; margin: 0 auto; line-height: 1.6; }
+    .divider { width: 40px; height: 3px; background: #3AACE2; border-radius: 99px; margin: 16px auto 0; }
 
     /* ── GRID ── */
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 340px;
-      gap: 20px;
-      align-items: start;
-    }
-    @media (max-width: 900px) {
-      .grid { grid-template-columns: 1fr; max-width: 600px; margin: 0 auto; }
-    }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+    @media (min-width: 900px) { .grid { grid-template-columns: 1fr 320px; } }
 
     /* ── CARD ── */
-    .card {
-      background: #0F2237;
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 20px;
-      overflow: hidden;
-    }
-    .card-header {
-      padding: 24px 28px 18px;
-      border-bottom: 1px solid rgba(255,255,255,0.07);
-    }
-    .card-label {
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: #3AACE2;
-      margin-bottom: 6px;
-    }
-    .card-title {
-      font-size: 19px;
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 6px;
-    }
-    .card-desc {
-      font-size: 13px;
-      color: rgba(255,255,255,0.45);
-      line-height: 1.55;
-    }
-    .card-body {
-      padding: 24px 28px 28px;
-    }
-    @media (max-width: 560px) {
-      .card-header { padding: 20px 20px 16px; }
-      .card-body { padding: 20px 20px 24px; }
-    }
+    .card { background: #0F2237; border: 1px solid rgba(255,255,255,0.08); border-radius: 18px; overflow: hidden; }
+    .card-header { padding: 20px 20px 16px; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    @media (min-width: 640px) { .card-header { padding: 24px 28px 18px; } }
+    .card-label { font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #3AACE2; margin-bottom: 4px; }
+    .card-title { font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+    .card-desc { font-size: 12px; color: rgba(255,255,255,0.4); line-height: 1.5; }
+    .card-body { padding: 20px 20px 24px; }
+    @media (min-width: 640px) { .card-body { padding: 24px 28px 28px; } }
 
-    /* ── FORM ── */
-    .row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-      margin-bottom: 14px;
-    }
+    /* ── FORM ROWS ── */
+    /* Mobile: sempre 1 coluna. Desktop: 2 colunas */
+    .row { display: grid; grid-template-columns: 1fr; gap: 12px; margin-bottom: 12px; }
+    @media (min-width: 500px) { .row.two { grid-template-columns: 1fr 1fr; } }
     .row.single { grid-template-columns: 1fr; }
-    @media (max-width: 520px) { .row { grid-template-columns: 1fr; } }
 
-    .field { display: flex; flex-direction: column; gap: 6px; }
-
-    label {
-      font-size: 12px;
-      font-weight: 500;
-      color: rgba(255,255,255,0.5);
-      letter-spacing: 0.03em;
-    }
-    .req { color: #3AACE2; margin-left: 2px; font-weight: 700; }
+    .field { display: flex; flex-direction: column; gap: 5px; position: relative; }
+    label { font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.45); letter-spacing: 0.02em; }
+    .req { color: #3AACE2; margin-left: 2px; }
 
     input[type="text"],
     input[type="date"],
     input[type="number"],
+    input[type="tel"],
     select {
       width: 100%;
       background: rgba(255,255,255,0.05);
       border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 12px;
+      border-radius: 10px;
       color: #fff;
       font-family: 'DM Sans', sans-serif;
-      font-size: 14px;
+      font-size: 15px;
       font-weight: 400;
-      padding: 12px 14px;
+      padding: 13px 14px;
       outline: none;
       transition: border-color .2s, background .2s;
       -webkit-appearance: none;
       appearance: none;
     }
-    input::placeholder { color: rgba(255,255,255,0.2); }
-    input[type="date"]::-webkit-calendar-picker-indicator {
-      filter: invert(.5) brightness(1.5);
-      cursor: pointer;
-    }
+    input::placeholder { color: rgba(255,255,255,0.18); }
+    input[type="date"]::-webkit-calendar-picker-indicator { filter: invert(.4) brightness(2); cursor: pointer; }
     select {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='rgba(255,255,255,0.4)' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='rgba(255,255,255,0.35)' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
       background-repeat: no-repeat;
-      background-position: right 14px center;
-      padding-right: 38px;
+      background-position: right 12px center;
+      padding-right: 36px;
     }
     select option { background: #0B1929; }
-    input:focus, select:focus {
-      border-color: rgba(58,172,226,0.55);
-      background: rgba(58,172,226,0.06);
-    }
-    input.bad {
-      border-color: rgba(255,90,95,0.6) !important;
-      background: rgba(255,90,95,0.04) !important;
-    }
+    input:focus, select:focus { border-color: rgba(58,172,226,0.6); background: rgba(58,172,226,0.05); }
+    input.bad { border-color: rgba(255,90,95,0.6) !important; background: rgba(255,90,95,0.04) !important; }
 
-    .field-hint {
-      font-size: 11px;
-      color: rgba(255,255,255,0.3);
-      line-height: 1.4;
-    }
+    .field-hint { font-size: 11px; color: rgba(255,255,255,0.25); line-height: 1.4; }
     .field-hint.err { color: #ff8a8d; }
+
+    /* ── CUSTOM AUTOCOMPLETE ── */
+    .ac-wrap { position: relative; }
+    .ac-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 4px);
+      left: 0; right: 0;
+      background: #162C44;
+      border: 1px solid rgba(58,172,226,0.3);
+      border-radius: 10px;
+      z-index: 300;
+      max-height: 200px;
+      overflow-y: auto;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    }
+    .ac-dropdown.open { display: block; }
+    .ac-item {
+      padding: 12px 14px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #fff;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .ac-item:last-child { border-bottom: none; }
+    .ac-item:hover, .ac-item.focused { background: rgba(58,172,226,0.12); }
+    .ac-item .ac-code {
+      font-size: 11px;
+      font-weight: 700;
+      color: #3AACE2;
+      background: rgba(58,172,226,0.12);
+      padding: 2px 7px;
+      border-radius: 99px;
+      flex-shrink: 0;
+    }
+    .ac-item .ac-city { flex: 1; }
+    .ac-item .ac-country { font-size: 11px; color: rgba(255,255,255,0.3); }
+    .ac-empty { padding: 14px; font-size: 13px; color: rgba(255,255,255,0.3); text-align: center; }
 
     /* ── TOGGLE ── */
     .toggle-row {
-      display: flex;
-      align-items: center;
-      gap: 12px;
+      display: flex; align-items: center; gap: 12px;
       padding: 13px 14px;
       background: rgba(255,255,255,0.03);
       border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 12px;
-      margin-bottom: 14px;
+      border-radius: 10px;
+      margin-bottom: 12px;
       cursor: pointer;
     }
     .toggle-row input[type="checkbox"] { display: none; }
     .toggle-pill {
-      flex-shrink: 0;
-      width: 36px;
-      height: 20px;
-      border-radius: 99px;
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.15);
-      position: relative;
-      transition: background .2s;
+      flex-shrink: 0; width: 36px; height: 20px; border-radius: 99px;
+      background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.15);
+      position: relative; transition: background .2s; pointer-events: none;
     }
     .toggle-pill::after {
-      content: '';
-      position: absolute;
-      width: 13px; height: 13px;
-      border-radius: 50%;
+      content: ''; position: absolute;
+      width: 13px; height: 13px; border-radius: 50%;
       background: rgba(255,255,255,0.5);
-      top: 3px; left: 3px;
-      transition: transform .2s, background .2s;
+      top: 3px; left: 3px; transition: transform .2s, background .2s;
     }
-    input[type="checkbox"]:checked ~ .toggle-pill { background: #3AACE2; border-color: #3AACE2; }
-    input[type="checkbox"]:checked ~ .toggle-pill::after { transform: translateX(16px); background: #fff; }
-
-    /* hack to apply when checkbox inside label */
     .toggle-row:has(input:checked) .toggle-pill { background: #3AACE2; border-color: #3AACE2; }
     .toggle-row:has(input:checked) .toggle-pill::after { transform: translateX(16px); background: #fff; }
-
-    .toggle-text {}
     .toggle-title { font-size: 13px; font-weight: 600; color: #fff; }
     .toggle-sub { font-size: 11px; color: rgba(255,255,255,0.35); margin-top: 2px; }
 
-    /* ── RADIO ── */
-    .radios-block {
-      margin-bottom: 14px;
-    }
-    .radios-label {
-      font-size: 12px;
-      font-weight: 500;
-      color: rgba(255,255,255,0.5);
-      margin-bottom: 8px;
-      display: block;
-    }
-    .radios {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
+    /* ── RADIOS ── */
+    .radios-block { margin-bottom: 12px; }
+    .radios-label { font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.45); margin-bottom: 7px; display: block; }
+    .radios { display: flex; flex-wrap: wrap; gap: 7px; }
     .radio-opt {
-      display: flex;
-      align-items: center;
-      gap: 7px;
+      display: flex; align-items: center; gap: 6px;
       padding: 8px 14px;
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 50px;
-      cursor: pointer;
-      user-select: none;
+      border: 1px solid rgba(255,255,255,0.12); border-radius: 50px;
+      cursor: pointer; user-select: none;
       transition: border-color .15s, background .15s;
+      font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.65);
     }
-    .radio-opt:has(input:checked) {
-      border-color: #3AACE2;
-      background: rgba(58,172,226,0.1);
-    }
+    .radio-opt:has(input:checked) { border-color: #3AACE2; background: rgba(58,172,226,0.1); color: #3AACE2; }
     .radio-opt input { display: none; }
-    .radio-opt span {
-      font-size: 13px;
-      font-weight: 500;
-      color: rgba(255,255,255,0.75);
-    }
-    .radio-opt:has(input:checked) span { color: #3AACE2; }
 
-    /* ── SEPARATOR ── */
-    .sep {
-      height: 1px;
-      background: rgba(255,255,255,0.07);
-      margin: 18px 0;
-    }
+    /* ── SEP ── */
+    .sep { height: 1px; background: rgba(255,255,255,0.07); margin: 16px 0; }
 
     /* ── CHILD AGES ── */
-    .child-ages {
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap: 10px;
-      margin-top: 10px;
-    }
-    @media (max-width:520px){ .child-ages{ grid-template-columns:1fr 1fr; } }
+    .child-ages { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+    @media (min-width: 400px) { .child-ages { grid-template-columns: repeat(3,1fr); } }
 
     /* ── BUTTONS ── */
     .btn-main {
-      width: 100%;
-      background: #3AACE2;
-      color: #fff;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 15px;
-      font-weight: 700;
-      padding: 15px 20px;
-      border-radius: 50px;
-      border: none;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 9px;
-      transition: background .2s, transform .15s;
-      margin-top: 6px;
-      letter-spacing: 0.01em;
+      width: 100%; background: #3AACE2; color: #fff;
+      font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 700;
+      padding: 16px 20px; border-radius: 50px; border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; gap: 9px;
+      transition: background .2s, transform .15s; margin-top: 6px;
     }
     .btn-main:hover { background: #2a9bd0; transform: translateY(-1px); }
     .btn-main:active { transform: translateY(0); }
 
-
     /* ── STATUS ── */
-    .status {
-      display: none;
-      margin-top: 14px;
-      padding: 13px 16px;
-      border-radius: 12px;
-      font-size: 13px;
-      font-weight: 500;
-      line-height: 1.5;
-    }
-    .status.ok {
-      background: rgba(58,172,226,0.1);
-      border: 1px solid rgba(58,172,226,0.3);
-      color: #7dd4f5;
-    }
-    .status.err {
-      background: rgba(255,90,95,0.08);
-      border: 1px solid rgba(255,90,95,0.3);
-      color: #ff9a9d;
-    }
-    .form-tip {
-      font-size: 12px;
-      color: rgba(255,255,255,0.25);
-      text-align: center;
-      margin-top: 14px;
-      line-height: 1.5;
-    }
+    .status { display: none; margin-top: 14px; padding: 13px 16px; border-radius: 10px; font-size: 13px; font-weight: 500; line-height: 1.5; }
+    .status.ok { background: rgba(58,172,226,0.1); border: 1px solid rgba(58,172,226,0.3); color: #7dd4f5; }
+    .status.err { background: rgba(255,90,95,0.08); border: 1px solid rgba(255,90,95,0.3); color: #ff9a9d; }
+    .form-tip { font-size: 11px; color: rgba(255,255,255,0.2); text-align: center; margin-top: 12px; line-height: 1.5; }
 
     /* ── SIDEBAR ── */
-    .sidebar { display: flex; flex-direction: column; gap: 16px; }
-
-    /* Steps */
-    .steps { display: flex; flex-direction: column; gap: 0; }
-    .step {
-      display: flex;
-      gap: 16px;
-      padding: 16px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-      align-items: flex-start;
-    }
+    .sidebar { display: flex; flex-direction: column; gap: 14px; }
+    .steps { display: flex; flex-direction: column; }
+    .step { display: flex; gap: 14px; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.06); align-items: flex-start; }
     .step:last-child { border-bottom: none; }
     .step-num {
-      flex-shrink: 0;
-      width: 30px; height: 30px;
-      border-radius: 50%;
-      background: rgba(58,172,226,0.12);
-      border: 1px solid rgba(58,172,226,0.3);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 12px;
-      font-weight: 700;
-      color: #3AACE2;
-      margin-top: 2px;
+      flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%;
+      background: rgba(58,172,226,0.1); border: 1px solid rgba(58,172,226,0.25);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px; font-weight: 700; color: #3AACE2; margin-top: 1px;
     }
-    .step-body { flex: 1; }
-    .step-title { font-size: 13px; font-weight: 700; color: #fff; margin-bottom: 3px; }
-    .step-desc { font-size: 12px; color: rgba(255,255,255,0.4); line-height: 1.5; }
-
-    /* Tags */
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      padding: 20px 0 4px;
-    }
-    .tag {
-      font-size: 12px;
-      font-weight: 500;
-      color: rgba(255,255,255,0.6);
-      padding: 7px 14px;
-      border: 1px solid rgba(255,255,255,0.14);
-      border-radius: 50px;
-    }
-
-    /* Info card */
-    .info-card {
-      background: rgba(58,172,226,0.07);
-      border: 1px solid rgba(58,172,226,0.2);
-      border-radius: 16px;
-      padding: 20px;
-    }
-    .info-card-title {
-      font-size: 13px;
-      font-weight: 700;
-      color: #3AACE2;
-      margin-bottom: 14px;
-    }
-    .info-items { display: flex; flex-direction: column; gap: 12px; }
-    .info-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-    }
+    .step-title { font-size: 13px; font-weight: 700; color: #fff; margin-bottom: 2px; }
+    .step-desc { font-size: 12px; color: rgba(255,255,255,0.38); line-height: 1.5; }
+    .info-card { background: rgba(58,172,226,0.06); border: 1px solid rgba(58,172,226,0.18); border-radius: 16px; padding: 20px; }
+    .info-card-title { font-size: 12px; font-weight: 700; color: #3AACE2; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.08em; }
+    .info-items { display: flex; flex-direction: column; gap: 10px; }
+    .info-item { display: flex; align-items: flex-start; gap: 10px; }
     .info-icon { flex-shrink: 0; margin-top: 1px; color: #3AACE2; }
-    .info-text { font-size: 12px; color: rgba(255,255,255,0.55); line-height: 1.5; }
-
-    .track-box {
-      display: none;
-      margin-top: 12px;
-      font-size: 11px;
-      color: rgba(255,255,255,0.25);
-      padding: 8px 12px;
-      border: 1px dashed rgba(255,255,255,0.1);
-      border-radius: 8px;
-    }
+    .info-text { font-size: 12px; color: rgba(255,255,255,0.5); line-height: 1.5; }
+    .tags { display: flex; flex-wrap: wrap; gap: 7px; padding-top: 16px; }
+    .tag { font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.5); padding: 6px 12px; border: 1px solid rgba(255,255,255,0.12); border-radius: 50px; }
+    .track-box { display: none; margin-top: 10px; font-size: 11px; color: rgba(255,255,255,0.2); padding: 8px 12px; border: 1px dashed rgba(255,255,255,0.08); border-radius: 8px; }
 
     /* ── MODAL ── */
-    .modal {
-      position: fixed; inset: 0;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      background: rgba(0,0,0,0.7);
-      backdrop-filter: blur(8px);
-      z-index: 9999;
-    }
+    .modal { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; padding: 16px; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px); z-index: 9999; }
     .modal.open { display: flex; }
-    .modal-card {
-      width: min(440px,100%);
-      background: #0F2237;
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 32px 80px rgba(0,0,0,0.6);
-    }
-    .modal-head {
-      padding: 22px 24px 16px;
-      border-bottom: 1px solid rgba(255,255,255,0.07);
-    }
-    .modal-title { font-size: 17px; font-weight: 700; color: #fff; margin-bottom: 6px; }
-    .modal-desc { font-size: 13px; color: rgba(255,255,255,0.45); line-height: 1.5; }
-    .modal-body { padding: 18px 24px; }
-    .modal-actions {
-      display: flex; gap: 10px;
-      padding: 14px 24px 22px;
-      border-top: 1px solid rgba(255,255,255,0.07);
-      justify-content: flex-end;
-    }
-    .modal-btn {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 13px;
-      font-weight: 600;
-      padding: 10px 20px;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: .15s;
-    }
-    .modal-btn.ghost {
-      background: transparent;
-      border: 1px solid rgba(255,255,255,0.14);
-      color: rgba(255,255,255,0.6);
-    }
+    .modal-card { width: min(420px,100%); background: #0F2237; border: 1px solid rgba(255,255,255,0.1); border-radius: 18px; overflow: hidden; box-shadow: 0 24px 60px rgba(0,0,0,0.6); }
+    .modal-head { padding: 20px 22px 16px; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .modal-title { font-size: 17px; font-weight: 700; color: #fff; margin-bottom: 5px; }
+    .modal-desc { font-size: 13px; color: rgba(255,255,255,0.4); line-height: 1.5; }
+    .modal-body { padding: 16px 22px; }
+    .modal-actions { display: flex; gap: 10px; padding: 12px 22px 20px; border-top: 1px solid rgba(255,255,255,0.07); justify-content: flex-end; }
+    .modal-btn { font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 600; padding: 10px 20px; border-radius: 50px; cursor: pointer; transition: .15s; }
+    .modal-btn.ghost { background: transparent; border: 1px solid rgba(255,255,255,0.14); color: rgba(255,255,255,0.6); }
     .modal-btn.ghost:hover { background: rgba(255,255,255,0.05); }
-    .modal-btn.primary {
-      background: #3AACE2;
-      border: none;
-      color: #fff;
-    }
+    .modal-btn.primary { background: #3AACE2; border: none; color: #fff; }
     .modal-btn.primary:hover { background: #2a9bd0; }
 
     /* ── WA FLOAT ── */
     .wa-float {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
-      background: #25D366;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 6px 24px rgba(37,211,102,0.4);
-      text-decoration: none;
-      transition: transform .2s, box-shadow .2s;
-      z-index: 50;
+      position: fixed; bottom: 20px; right: 20px;
+      width: 50px; height: 50px; border-radius: 50%;
+      background: #25D366; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4); text-decoration: none;
+      transition: transform .2s; z-index: 50;
     }
-    .wa-float:hover { transform: scale(1.08); box-shadow: 0 8px 30px rgba(37,211,102,0.5); }
+    .wa-float:hover { transform: scale(1.08); }
 
-    /* ── FOOTER ── */
-    footer {
-      text-align: center;
-      padding: 32px 24px 40px;
-      font-size: 12px;
-      color: rgba(255,255,255,0.2);
-      letter-spacing: 0.02em;
-    }
+    footer { text-align: center; padding: 24px 16px 40px; font-size: 11px; color: rgba(255,255,255,0.18); }
   </style>
 </head>
 <body>
@@ -546,15 +289,13 @@
   <nav>
     <a class="nav-logo" href="#">VOECOM<span>KENNEDY</span></a>
     <a class="nav-cta" href="https://wa.me/5562996448671" target="_blank" rel="noopener">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
       Falar agora
     </a>
   </nav>
 
   <!-- PAGE -->
   <div class="page">
-
-    <!-- HEADER -->
     <div class="page-header">
       <span class="section-label">Cotação de Passagens</span>
       <h1 class="page-title">Preencha e receba sua<br/><span>cotação no WhatsApp</span></h1>
@@ -562,10 +303,9 @@
       <div class="divider"></div>
     </div>
 
-    <!-- GRID -->
     <div class="grid">
 
-      <!-- FORM CARD -->
+      <!-- FORM -->
       <div class="card">
         <div class="card-header">
           <div class="card-label">Dados do voo</div>
@@ -573,34 +313,35 @@
           <div class="card-desc">Todos os campos com * são obrigatórios.</div>
         </div>
         <div class="card-body">
-          <form id="quoteForm" autocomplete="on" novalidate>
-            <datalist id="airportsList"></datalist>
+          <form id="quoteForm" novalidate>
 
             <!-- NOME -->
-            <div class="row">
+            <div class="row single" style="margin-bottom:12px;">
               <div class="field">
                 <label for="fullName">Nome e sobrenome <span class="req">*</span></label>
                 <input id="fullName" name="fullName" type="text" placeholder="Ex: Maria Silva"
                        required autocapitalize="words" autocomplete="name" />
                 <span class="field-hint" id="nameHint">Digite nome e sobrenome completos.</span>
               </div>
-              <div class="field">
-                <label for="whatsapp">WhatsApp <span class="req">*</span></label>
-                <input id="whatsapp" name="whatsapp" type="tel" placeholder="Ex: +55 (62) 99999-9999"
-                       required autocomplete="tel" />
-                <span class="field-hint" id="whatsappHint">Informe com DDD.</span>
-              </div>
             </div>
 
-            <!-- ROTA -->
-            <div class="row">
+            <!-- ORIGEM / DESTINO com autocomplete customizado -->
+            <div class="row two">
               <div class="field">
                 <label for="origin">Origem <span class="req">*</span></label>
-                <input id="origin" name="origin" list="airportsList" placeholder="Ex: Goiânia (GYN)" required />
+                <div class="ac-wrap">
+                  <input id="origin" name="origin" type="text" placeholder="Ex: Goiânia ou GYN"
+                         required autocomplete="off" autocorrect="off" spellcheck="false" />
+                  <div class="ac-dropdown" id="originDrop"></div>
+                </div>
               </div>
               <div class="field">
                 <label for="destination">Destino <span class="req">*</span></label>
-                <input id="destination" name="destination" list="airportsList" placeholder="Ex: Miami (MIA)" required />
+                <div class="ac-wrap">
+                  <input id="destination" name="destination" type="text" placeholder="Ex: Miami ou MIA"
+                         required autocomplete="off" autocorrect="off" spellcheck="false" />
+                  <div class="ac-dropdown" id="destinationDrop"></div>
+                </div>
               </div>
             </div>
 
@@ -608,14 +349,14 @@
             <label class="toggle-row" for="oneWay">
               <input id="oneWay" name="oneWay" type="checkbox" />
               <span class="toggle-pill"></span>
-              <span class="toggle-text">
+              <span>
                 <span class="toggle-title">Viagem só de ida</span>
-                <span class="toggle-sub">Marque se não precisa de data de volta</span>
+                <span class="toggle-sub" style="display:block;">Marque se não precisa de data de volta</span>
               </span>
             </label>
 
             <!-- DATAS -->
-            <div class="row">
+            <div class="row two">
               <div class="field">
                 <label for="departDate">Data de ida <span class="req">*</span></label>
                 <input id="departDate" name="departDate" type="date" required />
@@ -626,8 +367,8 @@
               </div>
             </div>
 
-            <!-- FLEX -->
-            <div class="row">
+            <!-- FLEXIBILIDADE -->
+            <div class="row two">
               <div class="field">
                 <label for="flexDepart">Flexibilidade ida</label>
                 <select id="flexDepart" name="flexDepart">
@@ -666,7 +407,7 @@
             <div class="sep"></div>
 
             <!-- PASSAGEIROS -->
-            <div class="row">
+            <div class="row two">
               <div class="field">
                 <label for="adults">Adultos <span class="req">*</span></label>
                 <input id="adults" name="adults" type="number" min="1" max="9" value="1" required />
@@ -677,13 +418,13 @@
               </div>
             </div>
 
-            <div id="childrenAgesWrap" style="display:none; margin-bottom:14px;">
+            <div id="childrenAgesWrap" style="display:none; margin-bottom:12px;">
               <label>Idade de cada criança</label>
               <div class="child-ages" id="childrenAges"></div>
             </div>
 
             <!-- MALA + OBS -->
-            <div class="row">
+            <div class="row two">
               <div class="field">
                 <label for="checkedBag">Mala despachada?</label>
                 <select id="checkedBag" name="checkedBag">
@@ -699,7 +440,6 @@
 
             <div class="sep"></div>
 
-            <!-- CTAs -->
             <button class="btn-main" type="submit">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
               Enviar cotação no WhatsApp
@@ -719,36 +459,36 @@
             <div class="card-label">Como funciona</div>
             <div class="card-title">Do primeiro contato ao embarque.</div>
           </div>
-          <div class="card-body" style="padding-top:8px;">
+          <div class="card-body" style="padding-top:6px;">
             <div class="steps">
               <div class="step">
                 <div class="step-num">1</div>
-                <div class="step-body">
+                <div>
                   <div class="step-title">Preencha o formulário</div>
                   <div class="step-desc">Informe origem, destino, datas e número de passageiros.</div>
                 </div>
               </div>
               <div class="step">
                 <div class="step-num">2</div>
-                <div class="step-body">
+                <div>
                   <div class="step-title">WhatsApp abre automaticamente</div>
                   <div class="step-desc">A mensagem já vem preenchida — é só enviar.</div>
                 </div>
               </div>
               <div class="step">
                 <div class="step-num">3</div>
-                <div class="step-body">
+                <div>
                   <div class="step-title">Receba a cotação</div>
-                  <div class="step-desc">Responderei com as melhores opções de voo disponíveis.</div>
+                  <div class="step-desc">Responderei com as melhores opções disponíveis.</div>
                 </div>
               </div>
-              <div class="step" style="border:none; padding-bottom:0;">
-                <div class="step-num" style="background:rgba(37,211,102,0.1); border-color:rgba(37,211,102,0.3);">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2.5" stroke-linecap="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+              <div class="step" style="border:none;padding-bottom:0;">
+                <div class="step-num" style="background:rgba(37,211,102,0.1);border-color:rgba(37,211,102,0.3);">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2.5" stroke-linecap="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
                 </div>
-                <div class="step-body">
-                  <div class="step-title">São Paulo: CGH ou GRU</div>
-                  <div class="step-desc">Ao digitar "São Paulo", uma tela de seleção de aeroporto abre automaticamente.</div>
+                <div>
+                  <div class="step-title">SP: CGH ou GRU</div>
+                  <div class="step-desc">Ao digitar São Paulo, uma tela de seleção de aeroporto abre automaticamente.</div>
                 </div>
               </div>
             </div>
@@ -760,15 +500,15 @@
           <div class="info-card-title">Por que a VoeComKennedy</div>
           <div class="info-items">
             <div class="info-item">
-              <svg class="info-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <svg class="info-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               <span class="info-text">Especialistas em passagens aéreas com atendimento personalizado</span>
             </div>
             <div class="info-item">
-              <svg class="info-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              <svg class="info-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
               <span class="info-text">Cotação rápida com as melhores tarifas do mercado</span>
             </div>
             <div class="info-item">
-              <svg class="info-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <svg class="info-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
               <span class="info-text">Suporte do primeiro contato até o embarque</span>
             </div>
           </div>
@@ -784,19 +524,18 @@
     </div>
   </div>
 
-  <!-- FOOTER -->
   <footer>© 2025 VoeComKennedy · VOE COM KENNEDY LTDA | MAIS VOO</footer>
 
   <!-- WA FLOAT -->
   <a class="wa-float" href="https://wa.me/5562996448671" target="_blank" rel="noopener" aria-label="WhatsApp">
-    <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
   </a>
 
   <!-- MODAL SP -->
   <div class="modal" id="spModal" aria-hidden="true">
-    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="spTitle">
+    <div class="modal-card" role="dialog" aria-modal="true">
       <div class="modal-head">
-        <p class="modal-title" id="spTitle">São Paulo, qual aeroporto?</p>
+        <p class="modal-title">São Paulo, qual aeroporto?</p>
         <p class="modal-desc">Selecione CGH ou GRU. Se aceitar Viracopos (VCP), marque abaixo.</p>
       </div>
       <div class="modal-body">
@@ -810,9 +549,9 @@
         <label class="toggle-row" for="spAllowVCP" style="margin:0;">
           <input id="spAllowVCP" type="checkbox" />
           <span class="toggle-pill"></span>
-          <span class="toggle-text">
+          <span>
             <span class="toggle-title">Aceito Campinas (VCP) se mais barato</span>
-            <span class="toggle-sub">Se desmarcado, fica apenas CGH ou GRU</span>
+            <span class="toggle-sub" style="display:block;">Se desmarcado, fica apenas CGH ou GRU</span>
           </span>
         </label>
       </div>
@@ -823,105 +562,386 @@
     </div>
   </div>
 
-  <!-- SCRIPT (lógica 100% preservada) -->
   <script>
-    const WHATSAPP_NUMBER="5562996448671";
-    const AIRPORTS=[{city:"Goiânia",country:"BR",code:"GYN"},{city:"Brasília",country:"BR",code:"BSB"},{city:"São Paulo",country:"BR",code:"GRU"},{city:"São Paulo",country:"BR",code:"CGH"},{city:"Campinas",country:"BR",code:"VCP"},{city:"Rio de Janeiro",country:"BR",code:"GIG"},{city:"Rio de Janeiro",country:"BR",code:"SDU"},{city:"Belo Horizonte",country:"BR",code:"CNF"},{city:"Salvador",country:"BR",code:"SSA"},{city:"Recife",country:"BR",code:"REC"},{city:"Fortaleza",country:"BR",code:"FOR"},{city:"Manaus",country:"BR",code:"MAO"},{city:"Belém",country:"BR",code:"BEL"},{city:"Curitiba",country:"BR",code:"CWB"},{city:"Porto Alegre",country:"BR",code:"POA"},{city:"Miami",country:"US",code:"MIA"},{city:"Orlando",country:"US",code:"MCO"},{city:"New York",country:"US",code:"JFK"},{city:"New York",country:"US",code:"LGA"},{city:"Newark",country:"US",code:"EWR"},{city:"Los Angeles",country:"US",code:"LAX"},{city:"San Francisco",country:"US",code:"SFO"},{city:"Las Vegas",country:"US",code:"LAS"},{city:"Chicago",country:"US",code:"ORD"},{city:"Atlanta",country:"US",code:"ATL"},{city:"London",country:"GB",code:"LHR"},{city:"London",country:"GB",code:"LGW"},{city:"Paris",country:"FR",code:"CDG"},{city:"Amsterdam",country:"NL",code:"AMS"},{city:"Frankfurt",country:"DE",code:"FRA"},{city:"Madrid",country:"ES",code:"MAD"},{city:"Rome",country:"IT",code:"FCO"},{city:"Lisbon",country:"PT",code:"LIS"},{city:"Buenos Aires",country:"AR",code:"EZE"},{city:"Buenos Aires",country:"AR",code:"AEP"},{city:"Santiago",country:"CL",code:"SCL"},{city:"Montevideo",country:"UY",code:"MVD"},{city:"Asunción",country:"PY",code:"ASU"},{city:"Lima",country:"PE",code:"LIM"},{city:"Bogotá",country:"CO",code:"BOG"},{city:"Mexico City",country:"MX",code:"MEX"},{city:"Cancún",country:"MX",code:"CUN"},{city:"Panama City",country:"PA",code:"PTY"}];
-    const form=document.getElementById("quoteForm"),fullNameEl=document.getElementById("fullName"),nameHint=document.getElementById("nameHint"),oneWay=document.getElementById("oneWay"),returnDate=document.getElementById("returnDate"),returnReq=document.getElementById("returnReq"),flexReturn=document.getElementById("flexReturn"),childrenInput=document.getElementById("children"),childrenAgesWrap=document.getElementById("childrenAgesWrap"),childrenAges=document.getElementById("childrenAges"),statusOk=document.getElementById("statusOk"),statusErr=document.getElementById("statusErr"),trackBox=document.getElementById("trackBox"),airportsList=document.getElementById("airportsList"),spModal=document.getElementById("spModal"),spConfirm=document.getElementById("spConfirm"),spCancel=document.getElementById("spCancel"),spAllowVCP=document.getElementById("spAllowVCP");
-    const spPrefs={origin:{airportCode:"",allowVCP:false},destination:{airportCode:"",allowVCP:false}};
-    let spActiveField="";
-    function pad2(n){return String(n).padStart(2,"0")}
-    function formatDateBR(v){if(!v)return"";const[y,m,d]=v.split("-");return`${pad2(d)}/${pad2(m)}/${y}`}
-    function norm(s){return(s||"").trim()}
-    function stripDiacritics(str){return(str||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim().toLowerCase()}
-    function buildAirportDatalist(){const seen=new Set(),opts=[];for(const a of AIRPORTS){const l=`${a.city} (${a.code})`;if(!seen.has(l)){seen.add(l);opts.push(`<option value="${l}"></option>`)}}for(const a of AIRPORTS){if(!seen.has(a.code)){seen.add(a.code);opts.push(`<option value="${a.code}"></option>`)}}airportsList.innerHTML=opts.join("")}
-    function resolveAirport(v){v=norm(v);if(!v)return v;const m=v.match(/\(([A-Z]{3})\)/i);if(m&&m[1]){const c=m[1].toUpperCase(),f=AIRPORTS.find(a=>a.code===c);return f?`${f.city} (${f.code})`:c}if(/^[A-Z]{3}$/i.test(v)){const c=v.toUpperCase(),f=AIRPORTS.find(a=>a.code===c);return f?`${f.city} (${f.code})`:c}return v}
-    async function loadBrazilAirports(){try{const r=await fetch("./airports_br.json",{cache:"no-store"});if(!r.ok)throw new Error();const br=await r.json();for(const a of br)if(a&&a.code&&a.city&&a.country==="BR")AIRPORTS.push(a)}catch(e){console.warn("airports_br.json não carregado",e)}}
-    function dedupeAirports(){const seen=new Set(),u=[];for(const a of AIRPORTS){const k=`${a.country}|${a.city}|${a.code}`;if(seen.has(k))continue;seen.add(k);u.push(a)}AIRPORTS.length=0;AIRPORTS.push(...u)}
-    function isSaoPauloCityOnly(v){const s=stripDiacritics(norm(v));if(!s)return false;if(/\([A-Z]{3}\)/i.test(v)||/^[A-Z]{3}$/i.test(norm(v)))return false;return s==="sao paulo"}
-    function isSPWithCode(v){v=norm(v);const m=v.match(/\(([A-Z]{3})\)/i);const c=m?m[1].toUpperCase():(/^[A-Z]{3}$/i.test(v)?v.toUpperCase():"");return["CGH","GRU","VCP"].includes(c)}
-    function setSPPrefFromValue(field,v){v=norm(v);const m=v.match(/\(([A-Z]{3})\)/i);const c=m?m[1].toUpperCase():(/^[A-Z]{3}$/i.test(v)?v.toUpperCase():"");if(["CGH","GRU"].includes(c)){spPrefs[field].airportCode=c;return}if(c==="VCP"){spPrefs[field].airportCode="VCP";spPrefs[field].allowVCP=true;return}if(!stripDiacritics(v).includes("sao paulo")){spPrefs[field].airportCode="";spPrefs[field].allowVCP=false}}
-    function openSPModal(f){spActiveField=f;const p=spPrefs[f];document.querySelectorAll('input[name="spAirport"]').forEach(r=>r.checked=p.airportCode?r.value===p.airportCode:r.value==="CGH");spAllowVCP.checked=!!p.allowVCP;spModal.classList.add("open");spModal.setAttribute("aria-hidden","false")}
-    function closeSPModal(){spModal.classList.remove("open");spModal.setAttribute("aria-hidden","true");spActiveField=""}
-    function applySPSelection(){const c=(document.querySelector('input[name="spAirport"]:checked')||{}).value||"CGH";if(!spActiveField)return;spPrefs[spActiveField].airportCode=c;spPrefs[spActiveField].allowVCP=!!spAllowVCP.checked;document.getElementById(spActiveField).value=`São Paulo (${c})`;closeSPModal()}
-    function getTracking(){const p=new URLSearchParams(window.location.search),parts=[];["src","utm_source","utm_medium","utm_campaign","utm_content"].forEach(k=>{if(p.get(k))parts.push(`${k}=${p.get(k)}`)});return parts.join(" | ")}
-    function setReturnMode(){const ow=oneWay.checked;returnDate.disabled=ow;flexReturn.disabled=ow;returnReq.style.opacity=ow?"0":"1";if(ow){returnDate.value="";flexReturn.value="0"}}
-    function rebuildChildrenAges(){const q=Math.max(0,Math.min(6,parseInt(childrenInput.value||"0",10)));childrenInput.value=q;childrenAges.innerHTML="";if(q===0){childrenAgesWrap.style.display="none";return}childrenAgesWrap.style.display="block";for(let i=1;i<=q;i++){const w=document.createElement("div");const l=document.createElement("label");l.style.cssText="margin:0 0 6px;font-size:11px;";l.textContent=`Criança ${i}`;const s=document.createElement("select");s.name=`childAge${i}`;for(let a=0;a<=17;a++){const o=document.createElement("option");o.value=String(a);o.textContent=a===0?"0 ano":a===1?"1 ano":`${a} anos`;s.appendChild(o)}w.appendChild(l);w.appendChild(s);childrenAges.appendChild(w)}}
-    function hasTwoNames(n){return norm(n).split(/\s+/).filter(Boolean).length>=2}
-    function validateFullNameUI(){const n=norm(fullNameEl.value);if(!n){fullNameEl.classList.add("bad");nameHint.classList.add("err");nameHint.textContent="Nome obrigatório.";return false}if(!hasTwoNames(n)){fullNameEl.classList.add("bad");nameHint.classList.add("err");nameHint.textContent="Digite nome e sobrenome.";return false}fullNameEl.classList.remove("bad");nameHint.classList.remove("err");nameHint.textContent="";return true}
-    function validateAll(){
-      const ok=validateFullNameUI();
-      const wa=norm(document.getElementById("whatsapp").value);
-      const o=norm(document.getElementById("origin").value),d=norm(document.getElementById("destination").value),dt=document.getElementById("departDate").value,a=parseInt(document.getElementById("adults").value||"0",10);
-      if(!ok||!wa||!o||!d||!dt||a<1)return false;
-      if(!oneWay.checked&&!document.getElementById("returnDate").value)return false;
-      return true;
+  const WHATSAPP_NUMBER = "5562996448671";
+
+  // ── AIRPORTS DATA ──
+  const AIRPORTS = [
+    {city:"Goiânia",country:"BR",code:"GYN"},{city:"Brasília",country:"BR",code:"BSB"},
+    {city:"São Paulo",country:"BR",code:"GRU"},{city:"São Paulo",country:"BR",code:"CGH"},
+    {city:"Campinas",country:"BR",code:"VCP"},{city:"Rio de Janeiro",country:"BR",code:"GIG"},
+    {city:"Rio de Janeiro",country:"BR",code:"SDU"},{city:"Belo Horizonte",country:"BR",code:"CNF"},
+    {city:"Salvador",country:"BR",code:"SSA"},{city:"Recife",country:"BR",code:"REC"},
+    {city:"Fortaleza",country:"BR",code:"FOR"},{city:"Manaus",country:"BR",code:"MAO"},
+    {city:"Belém",country:"BR",code:"BEL"},{city:"Curitiba",country:"BR",code:"CWB"},
+    {city:"Porto Alegre",country:"BR",code:"POA"},{city:"Florianópolis",country:"BR",code:"FLN"},
+    {city:"Natal",country:"BR",code:"NAT"},{city:"Maceió",country:"BR",code:"MCZ"},
+    {city:"João Pessoa",country:"BR",code:"JPA"},{city:"Aracaju",country:"BR",code:"AJU"},
+    {city:"Teresina",country:"BR",code:"THE"},{city:"São Luís",country:"BR",code:"SLZ"},
+    {city:"Palmas",country:"BR",code:"PMW"},{city:"Campo Grande",country:"BR",code:"CGR"},
+    {city:"Cuiabá",country:"BR",code:"CGB"},{city:"Porto Velho",country:"BR",code:"PVH"},
+    {city:"Macapá",country:"BR",code:"MCP"},{city:"Boa Vista",country:"BR",code:"BVB"},
+    {city:"Rio Branco",country:"BR",code:"RBR"},{city:"Vitória",country:"BR",code:"VIX"},
+    {city:"Porto Seguro",country:"BR",code:"BPS"},{city:"Ilhéus",country:"BR",code:"IOS"},
+    {city:"Londrina",country:"BR",code:"LDB"},{city:"Maringá",country:"BR",code:"MGF"},
+    {city:"Foz do Iguaçu",country:"BR",code:"IGU"},{city:"Uberlândia",country:"BR",code:"UDI"},
+    {city:"Ribeirão Preto",country:"BR",code:"RAO"},{city:"Juiz de Fora",country:"BR",code:"JDF"},
+    // EUA
+    {city:"Miami",country:"US",code:"MIA"},{city:"Orlando",country:"US",code:"MCO"},
+    {city:"New York",country:"US",code:"JFK"},{city:"New York",country:"US",code:"LGA"},
+    {city:"Newark",country:"US",code:"EWR"},{city:"Los Angeles",country:"US",code:"LAX"},
+    {city:"San Francisco",country:"US",code:"SFO"},{city:"Las Vegas",country:"US",code:"LAS"},
+    {city:"Chicago",country:"US",code:"ORD"},{city:"Atlanta",country:"US",code:"ATL"},
+    {city:"Boston",country:"US",code:"BOS"},{city:"Washington",country:"US",code:"IAD"},
+    {city:"Houston",country:"US",code:"IAH"},{city:"Dallas",country:"US",code:"DFW"},
+    {city:"Seattle",country:"US",code:"SEA"},{city:"Denver",country:"US",code:"DEN"},
+    // EUROPA
+    {city:"London",country:"GB",code:"LHR"},{city:"London",country:"GB",code:"LGW"},
+    {city:"Paris",country:"FR",code:"CDG"},{city:"Amsterdam",country:"NL",code:"AMS"},
+    {city:"Frankfurt",country:"DE",code:"FRA"},{city:"Madrid",country:"ES",code:"MAD"},
+    {city:"Rome",country:"IT",code:"FCO"},{city:"Lisbon",country:"PT",code:"LIS"},
+    {city:"Barcelona",country:"ES",code:"BCN"},{city:"Milan",country:"IT",code:"MXP"},
+    {city:"Zurich",country:"CH",code:"ZRH"},{city:"Vienna",country:"AT",code:"VIE"},
+    {city:"Dublin",country:"IE",code:"DUB"},{city:"Copenhagen",country:"DK",code:"CPH"},
+    // AMÉRICAS
+    {city:"Buenos Aires",country:"AR",code:"EZE"},{city:"Buenos Aires",country:"AR",code:"AEP"},
+    {city:"Santiago",country:"CL",code:"SCL"},{city:"Montevideo",country:"UY",code:"MVD"},
+    {city:"Lima",country:"PE",code:"LIM"},{city:"Bogotá",country:"CO",code:"BOG"},
+    {city:"Mexico City",country:"MX",code:"MEX"},{city:"Cancún",country:"MX",code:"CUN"},
+    {city:"Panama City",country:"PA",code:"PTY"},{city:"Asunción",country:"PY",code:"ASU"},
+    // OUTROS
+    {city:"Dubai",country:"AE",code:"DXB"},{city:"Tokyo",country:"JP",code:"NRT"},
+    {city:"Sydney",country:"AU",code:"SYD"},{city:"Toronto",country:"CA",code:"YYZ"},
+    {city:"Cancún",country:"MX",code:"CUN"},{city:"Punta Cana",country:"DO",code:"PUJ"},
+  ];
+
+  // ── UTILS ──
+  function norm(s){ return (s||"").trim(); }
+  function pad2(n){ return String(n).padStart(2,"0"); }
+  function formatDateBR(v){ if(!v) return ""; const [y,m,d]=v.split("-"); return `${pad2(d)}/${pad2(m)}/${y}`; }
+  function stripDiacritics(s){ return (s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim().toLowerCase(); }
+
+  // ── CUSTOM AUTOCOMPLETE ──
+  function buildAC(inputId, dropId) {
+    const input = document.getElementById(inputId);
+    const drop  = document.getElementById(dropId);
+    let focusedIdx = -1;
+
+    function search(q) {
+      const qn = stripDiacritics(q);
+      if (!qn || qn.length < 1) return [];
+      return AIRPORTS.filter(a => {
+        return stripDiacritics(a.city).includes(qn) ||
+               a.code.toLowerCase().startsWith(qn) ||
+               stripDiacritics(a.city).startsWith(qn);
+      }).slice(0, 8);
     }
-    function buildMessage(){
-      const n=norm(fullNameEl.value),
-            wa=norm(document.getElementById("whatsapp").value),
-            o=resolveAirport(document.getElementById("origin").value),
-            d=resolveAirport(document.getElementById("destination").value),
-            dt=document.getElementById("departDate").value,
-            rt=document.getElementById("returnDate").value,
-            fd=document.getElementById("flexDepart").value,
-            fr=document.getElementById("flexReturn").value,
-            a=document.getElementById("adults").value,
-            ch=parseInt(document.getElementById("children").value||"0",10),
-            bag=document.getElementById("checkedBag").value,
-            notes=norm(document.getElementById("notes").value),
-            ow=oneWay.checked,
-            tp=(form.querySelector('input[name="timePref"]:checked')||{}).value||"Indiferente";
-      let ages="";
-      if(ch>0){const aa=[];for(let i=1;i<=ch;i++){const s=form.querySelector(`[name="childAge${i}"]`);if(s)aa.push(s.value)}ages=aa.length?` (idades: ${aa.join(", ")})`:"";}
-      const flexLabel=v=>v==="0"?"Sem flexibilidade":`Até ${v} ${v==="1"?"dia":"dias"}`;
-      const oSP=stripDiacritics(o).includes("sao paulo"),dSP=stripDiacritics(d).includes("sao paulo");
-      const trk=getTracking();
-      let msg="Olá! Segue minha solicitação de cotação:\n\n";
-      msg+=`Nome: ${n}\n`;
-      msg+=`WhatsApp: ${wa}\n`;
-      msg+="\n";
-      msg+=`Origem: ${o}\n`;
-      if(oSP)msg+=`Origem SP, aceita VCP: ${spPrefs.origin.allowVCP?"Sim":"Não"}\n`;
-      msg+=`Destino: ${d}\n`;
-      if(dSP)msg+=`Destino SP, aceita VCP: ${spPrefs.destination.allowVCP?"Sim":"Não"}\n`;
-      msg+="\n";
-      msg+=`Data de ida: ${formatDateBR(dt)}\n`;
-      msg+=`Flexibilidade ida: ${flexLabel(fd)}\n`;
-      if(!ow){
-        msg+=`Data de volta: ${formatDateBR(rt)}\n`;
-        msg+=`Flexibilidade volta: ${flexLabel(fr)}\n`;
+
+    function render(results) {
+      focusedIdx = -1;
+      if (!results.length) {
+        drop.innerHTML = `<div class="ac-empty">Nenhum aeroporto encontrado</div>`;
+        drop.classList.add("open");
+        return;
       }
-      msg+=`Horário preferido: ${tp}\n`;
-      msg+="\n";
-      msg+=`Adultos: ${a}\n`;
-      msg+=`Crianças: ${ch}${ages}\n`;
-      msg+="\n";
-      msg+=`Mala despachada: ${bag}\n`;
-      if(notes)msg+=`Obs: ${notes}\n`;
-      if(trk)msg+=`\nOrigem do clique: ${trk}\n`;
-      msg+="--";
-      return msg;
+      drop.innerHTML = results.map((a, i) =>
+        `<div class="ac-item" data-idx="${i}" data-value="${a.city} (${a.code})">
+          <span class="ac-code">${a.code}</span>
+          <span class="ac-city">${a.city}</span>
+          <span class="ac-country">${a.country}</span>
+        </div>`
+      ).join("");
+      drop.classList.add("open");
     }
-    function showOk(){statusErr.style.display="none";statusOk.style.display="block";statusOk.scrollIntoView({behavior:"smooth",block:"center"})}
-    function showErr(){statusOk.style.display="none";statusErr.style.display="block";statusErr.scrollIntoView({behavior:"smooth",block:"center"})}
-    function openWA(msg){window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`,"_blank","noopener,noreferrer")}
-    function handleSPGate(fid){const v=norm(document.getElementById(fid).value);if(isSPWithCode(v)){setSPPrefFromValue(fid,v);return}if(isSaoPauloCityOnly(v)){openSPModal(fid);return}setSPPrefFromValue(fid,v)}
-    oneWay.addEventListener("change",setReturnMode);
-    childrenInput.addEventListener("input",rebuildChildrenAges);
-    fullNameEl.addEventListener("input",validateFullNameUI);
-    fullNameEl.addEventListener("blur",validateFullNameUI);
-    document.getElementById("origin").addEventListener("blur",()=>handleSPGate("origin"));
-    document.getElementById("destination").addEventListener("blur",()=>handleSPGate("destination"));
-    document.getElementById("origin").addEventListener("change",()=>handleSPGate("origin"));
-    document.getElementById("destination").addEventListener("change",()=>handleSPGate("destination"));
-    form.addEventListener("submit",e=>{e.preventDefault();if(!validateAll()){validateFullNameUI();showErr();return}showOk();openWA(buildMessage())});
-    spConfirm.addEventListener("click",applySPSelection);
-    spCancel.addEventListener("click",closeSPModal);
-    spModal.addEventListener("click",e=>{if(e.target===spModal)closeSPModal()});
-    buildAirportDatalist();setReturnMode();rebuildChildrenAges();validateFullNameUI();
-    const trk=getTracking();if(trk){trackBox.style.display="block";trackBox.textContent=`Rastreio: ${trk}`}
-    loadBrazilAirports().then(()=>{dedupeAirports();buildAirportDatalist()}).catch(()=>{});
+
+    function close() {
+      drop.classList.remove("open");
+      focusedIdx = -1;
+    }
+
+    function select(value) {
+      input.value = value;
+      close();
+      handleSPGate(inputId);
+      input.dispatchEvent(new Event('change'));
+    }
+
+    input.addEventListener("input", () => {
+      const v = input.value;
+      if (!v.trim()) { close(); return; }
+      render(search(v));
+    });
+
+    input.addEventListener("focus", () => {
+      if (input.value.trim()) render(search(input.value));
+    });
+
+    input.addEventListener("keydown", (e) => {
+      const items = drop.querySelectorAll(".ac-item");
+      if (!drop.classList.contains("open")) return;
+      if (e.key === "ArrowDown") {
+        e.preventDefault();
+        focusedIdx = Math.min(focusedIdx + 1, items.length - 1);
+        items.forEach((el, i) => el.classList.toggle("focused", i === focusedIdx));
+      } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        focusedIdx = Math.max(focusedIdx - 1, 0);
+        items.forEach((el, i) => el.classList.toggle("focused", i === focusedIdx));
+      } else if (e.key === "Enter" && focusedIdx >= 0) {
+        e.preventDefault();
+        select(items[focusedIdx].dataset.value);
+      } else if (e.key === "Escape") {
+        close();
+      }
+    });
+
+    drop.addEventListener("mousedown", (e) => {
+      const item = e.target.closest(".ac-item");
+      if (item) { e.preventDefault(); select(item.dataset.value); }
+    });
+
+    drop.addEventListener("touchstart", (e) => {
+      const item = e.target.closest(".ac-item");
+      if (item) { e.preventDefault(); select(item.dataset.value); }
+    }, { passive: false });
+
+    document.addEventListener("click", (e) => {
+      if (!input.contains(e.target) && !drop.contains(e.target)) close();
+    });
+
+    return { close };
+  }
+
+  // ── SP MODAL ──
+  const spPrefs = {
+    origin:      { airportCode: "", allowVCP: false },
+    destination: { airportCode: "", allowVCP: false }
+  };
+  let spActiveField = "";
+
+  function isSaoPauloCityOnly(v) {
+    const s = stripDiacritics(norm(v));
+    if (!s) return false;
+    if (/\([A-Z]{3}\)/i.test(v) || /^[A-Z]{3}$/i.test(norm(v))) return false;
+    return s === "sao paulo";
+  }
+  function isSPWithCode(v) {
+    v = norm(v);
+    const m = v.match(/\(([A-Z]{3})\)/i);
+    const c = m ? m[1].toUpperCase() : (/^[A-Z]{3}$/i.test(v) ? v.toUpperCase() : "");
+    return ["CGH","GRU","VCP"].includes(c);
+  }
+  function setSPPrefFromValue(field, v) {
+    v = norm(v);
+    const m = v.match(/\(([A-Z]{3})\)/i);
+    const c = m ? m[1].toUpperCase() : (/^[A-Z]{3}$/i.test(v) ? v.toUpperCase() : "");
+    if (["CGH","GRU"].includes(c)) { spPrefs[field].airportCode = c; return; }
+    if (c === "VCP") { spPrefs[field].airportCode = "VCP"; spPrefs[field].allowVCP = true; return; }
+    if (!stripDiacritics(v).includes("sao paulo")) { spPrefs[field].airportCode = ""; spPrefs[field].allowVCP = false; }
+  }
+  function handleSPGate(fieldId) {
+    const v = norm(document.getElementById(fieldId).value);
+    if (isSPWithCode(v)) { setSPPrefFromValue(fieldId, v); return; }
+    if (isSaoPauloCityOnly(v)) { openSPModal(fieldId); return; }
+    setSPPrefFromValue(fieldId, v);
+  }
+  function openSPModal(f) {
+    spActiveField = f;
+    const p = spPrefs[f];
+    document.querySelectorAll('input[name="spAirport"]').forEach(r => r.checked = p.airportCode ? r.value === p.airportCode : r.value === "CGH");
+    document.getElementById("spAllowVCP").checked = !!p.allowVCP;
+    document.getElementById("spModal").classList.add("open");
+  }
+  function closeSPModal() { document.getElementById("spModal").classList.remove("open"); spActiveField = ""; }
+  function applySPSelection() {
+    const c = (document.querySelector('input[name="spAirport"]:checked')||{}).value || "CGH";
+    if (!spActiveField) return;
+    spPrefs[spActiveField].airportCode = c;
+    spPrefs[spActiveField].allowVCP = !!document.getElementById("spAllowVCP").checked;
+    document.getElementById(spActiveField).value = `São Paulo (${c})`;
+    closeSPModal();
+  }
+
+  // ── FORM LOGIC ──
+  const form         = document.getElementById("quoteForm");
+  const fullNameEl   = document.getElementById("fullName");
+  const nameHint     = document.getElementById("nameHint");
+  const oneWay       = document.getElementById("oneWay");
+  const returnDate   = document.getElementById("returnDate");
+  const returnReq    = document.getElementById("returnReq");
+  const flexReturn   = document.getElementById("flexReturn");
+  const childrenInput    = document.getElementById("children");
+  const childrenAgesWrap = document.getElementById("childrenAgesWrap");
+  const childrenAges     = document.getElementById("childrenAges");
+  const statusOk   = document.getElementById("statusOk");
+  const statusErr  = document.getElementById("statusErr");
+  const trackBox   = document.getElementById("trackBox");
+
+  function resolveAirport(v) {
+    v = norm(v);
+    if (!v) return v;
+    const m = v.match(/\(([A-Z]{3})\)/i);
+    if (m) { const f=AIRPORTS.find(a=>a.code===m[1].toUpperCase()); return f?`${f.city} (${f.code})`:m[1].toUpperCase(); }
+    if (/^[A-Z]{3}$/i.test(v)) { const f=AIRPORTS.find(a=>a.code===v.toUpperCase()); return f?`${f.city} (${f.code})`:v.toUpperCase(); }
+    return v;
+  }
+
+  async function loadBrazilAirports() {
+    try {
+      const r = await fetch("./airports_br.json", { cache: "no-store" });
+      if (!r.ok) return;
+      const br = await r.json();
+      for (const a of br) if (a?.code && a?.city && a.country === "BR") AIRPORTS.push(a);
+    } catch(e) {}
+  }
+
+  function setReturnMode() {
+    const ow = oneWay.checked;
+    returnDate.disabled = ow; flexReturn.disabled = ow;
+    returnReq.style.opacity = ow ? "0" : "1";
+    if (ow) { returnDate.value = ""; flexReturn.value = "0"; }
+  }
+
+  function rebuildChildrenAges() {
+    const q = Math.max(0, Math.min(6, parseInt(childrenInput.value||"0", 10)));
+    childrenInput.value = q;
+    childrenAges.innerHTML = "";
+    if (q === 0) { childrenAgesWrap.style.display = "none"; return; }
+    childrenAgesWrap.style.display = "block";
+    for (let i = 1; i <= q; i++) {
+      const w = document.createElement("div");
+      const l = document.createElement("label");
+      l.style.cssText = "margin:0 0 5px;font-size:11px;display:block;";
+      l.textContent = `Criança ${i}`;
+      const s = document.createElement("select");
+      s.name = `childAge${i}`;
+      for (let a = 0; a <= 17; a++) {
+        const o = document.createElement("option");
+        o.value = String(a);
+        o.textContent = a === 0 ? "0 ano" : a === 1 ? "1 ano" : `${a} anos`;
+        s.appendChild(o);
+      }
+      w.appendChild(l); w.appendChild(s); childrenAges.appendChild(w);
+    }
+  }
+
+  function validateFullNameUI() {
+    const n = norm(fullNameEl.value);
+    if (!n) { fullNameEl.classList.add("bad"); nameHint.classList.add("err"); nameHint.textContent = "Nome obrigatório."; return false; }
+    if (n.split(/\s+/).filter(Boolean).length < 2) { fullNameEl.classList.add("bad"); nameHint.classList.add("err"); nameHint.textContent = "Digite nome e sobrenome."; return false; }
+    fullNameEl.classList.remove("bad"); nameHint.classList.remove("err"); nameHint.textContent = ""; return true;
+  }
+
+  function validateAll() {
+    const ok = validateFullNameUI();
+    const o  = norm(document.getElementById("origin").value);
+    const d  = norm(document.getElementById("destination").value);
+    const dt = document.getElementById("departDate").value;
+    const a  = parseInt(document.getElementById("adults").value||"0", 10);
+    if (!ok || !o || !d || !dt || a < 1) return false;
+    if (!oneWay.checked && !document.getElementById("returnDate").value) return false;
+    return true;
+  }
+
+  function getTracking() {
+    const p = new URLSearchParams(window.location.search), parts = [];
+    ["src","utm_source","utm_medium","utm_campaign","utm_content"].forEach(k => { if(p.get(k)) parts.push(`${k}=${p.get(k)}`); });
+    return parts.join(" | ");
+  }
+
+  function flexLabel(v) { return v === "0" ? "Sem flexibilidade" : `Até ${v} ${v==="1"?"dia":"dias"}`; }
+
+  function buildMessage() {
+    const n   = norm(fullNameEl.value);
+    const o   = resolveAirport(document.getElementById("origin").value);
+    const d   = resolveAirport(document.getElementById("destination").value);
+    const dt  = document.getElementById("departDate").value;
+    const rt  = document.getElementById("returnDate").value;
+    const fd  = document.getElementById("flexDepart").value;
+    const fr  = document.getElementById("flexReturn").value;
+    const a   = document.getElementById("adults").value;
+    const ch  = parseInt(document.getElementById("children").value||"0", 10);
+    const bag = document.getElementById("checkedBag").value;
+    const notes = norm(document.getElementById("notes").value);
+    const ow  = oneWay.checked;
+    const tp  = (form.querySelector('input[name="timePref"]:checked')||{}).value || "Indiferente";
+
+    let ages = "";
+    if (ch > 0) {
+      const aa = [];
+      for (let i = 1; i <= ch; i++) { const s = form.querySelector(`[name="childAge${i}"]`); if(s) aa.push(s.value); }
+      ages = aa.length ? ` (idades: ${aa.join(", ")})` : "";
+    }
+
+    const oSP = stripDiacritics(o).includes("sao paulo");
+    const dSP = stripDiacritics(d).includes("sao paulo");
+    const trk = getTracking();
+
+    let msg = "Olá! Segue minha solicitação de cotação:\n\n";
+    msg += `Nome: ${n}\n`;
+    msg += "\n";
+    msg += `Origem: ${o}\n`;
+    if (oSP) msg += `Origem SP, aceita VCP: ${spPrefs.origin.allowVCP?"Sim":"Não"}\n`;
+    msg += `Destino: ${d}\n`;
+    if (dSP) msg += `Destino SP, aceita VCP: ${spPrefs.destination.allowVCP?"Sim":"Não"}\n`;
+    msg += "\n";
+    msg += `Data de ida: ${formatDateBR(dt)}\n`;
+    msg += `Flexibilidade ida: ${flexLabel(fd)}\n`;
+    if (!ow) {
+      msg += `Data de volta: ${formatDateBR(rt)}\n`;
+      msg += `Flexibilidade volta: ${flexLabel(fr)}\n`;
+    }
+    msg += `Horário preferido: ${tp}\n`;
+    msg += "\n";
+    msg += `Adultos: ${a}\n`;
+    msg += `Crianças: ${ch}${ages}\n`;
+    msg += "\n";
+    msg += `Mala despachada: ${bag}\n`;
+    if (notes) msg += `Obs: ${notes}\n`;
+    if (trk) msg += `\nOrigem do clique: ${trk}\n`;
+    msg += "--";
+    return msg;
+  }
+
+  function showOk() { statusErr.style.display="none"; statusOk.style.display="block"; statusOk.scrollIntoView({behavior:"smooth",block:"center"}); }
+  function showErr() { statusOk.style.display="none"; statusErr.style.display="block"; statusErr.scrollIntoView({behavior:"smooth",block:"center"}); }
+  function openWA(msg) { window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`,"_blank","noopener,noreferrer"); }
+
+  // ── EVENTS ──
+  oneWay.addEventListener("change", setReturnMode);
+  childrenInput.addEventListener("input", rebuildChildrenAges);
+  fullNameEl.addEventListener("input", validateFullNameUI);
+  fullNameEl.addEventListener("blur", validateFullNameUI);
+
+  // SP gate on blur
+  ["origin","destination"].forEach(id => {
+    document.getElementById(id).addEventListener("blur", () => {
+      setTimeout(() => handleSPGate(id), 150);
+    });
+  });
+
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    if (!validateAll()) { validateFullNameUI(); showErr(); return; }
+    showOk();
+    openWA(buildMessage());
+  });
+
+  document.getElementById("spConfirm").addEventListener("click", applySPSelection);
+  document.getElementById("spCancel").addEventListener("click", closeSPModal);
+  document.getElementById("spModal").addEventListener("click", e => { if(e.target===document.getElementById("spModal")) closeSPModal(); });
+
+  // ── INIT ──
+  buildAC("origin", "originDrop");
+  buildAC("destination", "destinationDrop");
+  setReturnMode();
+  rebuildChildrenAges();
+  validateFullNameUI();
+
+  const trk = getTracking();
+  if (trk) { trackBox.style.display="block"; trackBox.textContent=`Rastreio: ${trk}`; }
+
+  loadBrazilAirports().catch(() => {});
   </script>
 </body>
 </html>
